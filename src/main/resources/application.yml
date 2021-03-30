@@ -1,0 +1,38 @@
+server:
+  port: 9200
+
+spring:
+
+  application:
+    name: SpringSecurity
+
+
+  security:
+    user:
+      name: user
+      password: 123456
+      roles: admin
+
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://121.43.158.136:3306/wxArticle?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&useSSL=false&serverTimezone=GMT%2B8&allowMultiQueries=true
+    username: root
+    password: aaa85444
+
+mybatis-plus:
+  global-config:
+    db-config:
+      id-type: auto
+      field-strategy: not_empty
+      #ÍÕ·åÏÂ»®Ïß×ª»»
+      column-underline: true
+      #Âß¼­É¾³ýÅäÖÃ
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+    refresh: false
+
+#logging:
+#  level:
+#    com.example.SpringSecurity.mapper: debug
+#  config: classpath:logging/logging-log4j2.yml

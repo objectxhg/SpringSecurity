@@ -1,13 +1,15 @@
 package com.example.SpringSecurity;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class XhgApplication {
+@MapperScan(basePackages="com.example.SpringSecurity.mapper")
+public class SpringSecurityApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(XhgApplication.class, args);
+		SpringApplication.run(SpringSecurityApplication.class, args);
 	}
 
 }
