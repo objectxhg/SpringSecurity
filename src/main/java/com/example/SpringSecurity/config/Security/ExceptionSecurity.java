@@ -19,7 +19,7 @@ public class ExceptionSecurity {
     public String AccessDeniedExceptionHandler(AccessDeniedException exception) {
 //        logger.info("捕获权限验证异常信息===》》》"+exception.getMessage());
 
-        logger.info("SecurityException ----->"+exception.getMessage());
+        logger.info("SecurityException ----->" + exception.getMessage());
 
         return "403";
     }

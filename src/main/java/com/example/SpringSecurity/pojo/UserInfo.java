@@ -1,6 +1,7 @@
 package com.example.SpringSecurity.pojo;
 
 import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import org.springframework.security.core.GrantedAuthority;
@@ -37,6 +38,15 @@ public class UserInfo implements Serializable, UserDetails {
 
     private Integer userRole;
 
+    @TableField(exist = false)
+    private Long loginTime;
+
+    @TableField(exist = false)
+    private Long expireTime;
+
+    @TableField(exist = false)
+    private String  token;
+
     @Override
     public String toString() {
         return "UserInfo{" +
@@ -48,7 +58,34 @@ public class UserInfo implements Serializable, UserDetails {
                 ", pwd='" + pwd + '\'' +
                 ", userState=" + userState +
                 ", userRole=" + userRole +
+                ", loginTime=" + loginTime +
+                ", expireTime=" + expireTime +
+                ", token='" + token + '\'' +
                 '}';
+    }
+
+    public Long getLoginTime() {
+        return loginTime;
+    }
+
+    public void setLoginTime(Long loginTime) {
+        this.loginTime = loginTime;
+    }
+
+    public Long getExpireTime() {
+        return expireTime;
+    }
+
+    public void setExpireTime(Long expireTime) {
+        this.expireTime = expireTime;
+    }
+
+    public String getToken() {
+        return token;
+    }
+
+    public void setToken(String token) {
+        this.token = token;
     }
 
     public String getAccount() {
@@ -133,22 +170,22 @@ public class UserInfo implements Serializable, UserDetails {
 
     @Override
     public boolean isAccountNonExpired() {
-        return false;
+        return true;
     }
 
     @Override
     public boolean isAccountNonLocked() {
-        return false;
+        return true;
     }
 
     @Override
     public boolean isCredentialsNonExpired() {
-        return false;
+        return true;
     }
 
     @Override
     public boolean isEnabled() {
-        return false;
+        return true;
     }
 }
 

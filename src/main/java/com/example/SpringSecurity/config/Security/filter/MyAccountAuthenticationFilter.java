@@ -1,5 +1,8 @@
-package com.example.SpringSecurity.config.Security;
+package com.example.SpringSecurity.config.Security.filter;
 
+import com.example.SpringSecurity.config.Security.handler.MyAuthenticationSuccessHandler;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
@@ -9,15 +12,19 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * @Author Administrator
- * @create 2021/3/30 15:39
+ * 2、
+ *
  */
-public class AccountAuthenticationFilter extends UsernamePasswordAuthenticationFilter {
+public class MyAccountAuthenticationFilter extends UsernamePasswordAuthenticationFilter {
+
+    private static final Logger logger = LogManager.getLogger(MyAccountAuthenticationFilter.class);
 
     @Override
     public Authentication attemptAuthentication(HttpServletRequest request, HttpServletResponse response) throws AuthenticationException {
         String username = this.obtainUsername(request);
         String password = this.obtainPassword(request);
+
+        logger.info("【MyAccountAuthenticationFilter】：" + username + "-" + password);
 
         if(username == null) {
             username = "";

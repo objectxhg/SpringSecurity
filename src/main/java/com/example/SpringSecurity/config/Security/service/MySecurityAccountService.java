@@ -1,10 +1,11 @@
-package com.example.SpringSecurity.config.Security;
+package com.example.SpringSecurity.config.Security.service;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.example.SpringSecurity.mapper.UserInfoMapper;
 import com.example.SpringSecurity.pojo.UserInfo;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
-import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -15,7 +16,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 实现UserDetailsService方法，自定义检查账户信息
+ * 3、实现UserDetailsService方法，自定义检查账户信息
  *
  * @author Administrator
  * 自定义账户认证方法，
@@ -24,6 +25,8 @@ import java.util.List;
  */
 @Service
 public class MySecurityAccountService implements UserDetailsService {
+
+    private static final Logger logger = LogManager.getLogger(MySecurityAccountService.class);
 
     @Resource
     private UserInfoMapper userInfoMapper;
@@ -38,6 +41,11 @@ public class MySecurityAccountService implements UserDetailsService {
         queryWrapper.eq("account", account);
 
         UserInfo user = userInfoMapper.selectOne(queryWrapper);
+
+        logger.info("【MySecurityAccountService】:" + user);
+
+
+
         if(null == user){
             throw new UsernameNotFoundException("登陆账户不存在！");
         }

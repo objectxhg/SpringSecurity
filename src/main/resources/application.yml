@@ -25,14 +25,24 @@ mybatis-plus:
     db-config:
       id-type: auto
       field-strategy: not_empty
-      #�շ��»���ת��
+      #驼峰下划线转换
       column-underline: true
-      #�߼�ɾ������
+      #逻辑删除配置
       logic-delete-value: 1
       logic-not-delete-value: 0
     refresh: false
 
-#logging:
-#  level:
-#    com.example.SpringSecurity.mapper: debug
-#  config: classpath:logging/logging-log4j2.yml
+logging:
+  level:
+    com.example.SpringSecurity.mapper: debug
+  config: classpath:logging/logging-log4j2.yml
+
+# token配置
+token:
+  # 令牌自定义标识
+  header: Authorization
+  # 令牌密钥
+#  secret: abcdefghijklmnopqrstuvwxyz
+  secret: gwe1vVoEf7wu
+  # 令牌有效期（默认30分钟）
+  expireTime: 30

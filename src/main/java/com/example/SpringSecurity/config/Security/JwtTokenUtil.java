@@ -5,6 +5,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.stereotype.Component;
 
 
 /**
@@ -12,19 +13,16 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
  * 
  * @author ruoyi
  */
-public class SecurityUtils
-{
+@Component
+public class JwtTokenUtil {
+
     /**
      * 获取用户账户
      **/
-    public static String getUsername()
-    {
-        try
-        {
+    public static String getUsername() {
+        try {
             return getLoginUser().getUsername();
-        }
-        catch (Exception e)
-        {
+        } catch (Exception e) {
             throw new RuntimeException("获取用户账户异常"+ HttpStatus.UNAUTHORIZED);
         }
     }
@@ -32,14 +30,10 @@ public class SecurityUtils
     /**
      * 获取用户
      **/
-    public static UserInfo getLoginUser()
-    {
-        try
-        {
+    public static UserInfo getLoginUser() {
+        try {
             return (UserInfo) getAuthentication().getPrincipal();
-        }
-        catch (Exception e)
-        {
+        } catch (Exception e) {
             throw new RuntimeException("获取用户信息异常" + HttpStatus.UNAUTHORIZED);
         }
     }
@@ -58,8 +52,7 @@ public class SecurityUtils
      * @param password 密码
      * @return 加密字符串
      */
-    public static String encryptPassword(String password)
-    {
+    public static String encryptPassword(String password) {
         BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
         return passwordEncoder.encode(password);
     }
@@ -71,8 +64,7 @@ public class SecurityUtils
      * @param encodedPassword 加密后字符
      * @return 结果
      */
-    public static boolean matchesPassword(String rawPassword, String encodedPassword)
-    {
+    public static boolean matchesPassword(String rawPassword, String encodedPassword) {
         BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
         return passwordEncoder.matches(rawPassword, encodedPassword);
     }
@@ -87,4 +79,6 @@ public class SecurityUtils
     {
         return userId != null && 1L == userId;
     }
+
+
 }

@@ -1,4 +1,4 @@
-package com.example.SpringSecurity.config.Security;
+package com.example.SpringSecurity.config.Security.handler;
 
 import com.example.SpringSecurity.pojo.UserInfo;
 import org.apache.logging.log4j.LogManager;
@@ -14,8 +14,8 @@ import java.io.IOException;
 import java.util.Date;
 
 /**
- * @Author Administrator
- * @create 2021/3/30 16:19
+ * 密码验证通过后会进入 MyAuthenticationSuccessHandler
+ *
  */
 public class MyAuthenticationSuccessHandler implements AuthenticationSuccessHandler {
 
@@ -27,7 +27,8 @@ public class MyAuthenticationSuccessHandler implements AuthenticationSuccessHand
 
         //登录成功后获取当前登录用户
         UserInfo user = (UserInfo) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
-        logger.info("用户[{}]于[{}]登录成功!", user.getUsername(), new Date());
+
+        logger.info("用户 [{}] 于 [{}] 登录成功!", user.getUsername(), new Date());
 
 //        WriteResponse.write(httpServletResponse, new SuccessResponse());
 
