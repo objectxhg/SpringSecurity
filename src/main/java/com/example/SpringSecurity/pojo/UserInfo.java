@@ -21,22 +21,11 @@ import java.util.Collection;
 public class UserInfo implements Serializable, UserDetails {
 
     @TableId(type= IdType.AUTO)
-
     private Integer userId;
-
-    private Integer companyId;
 
     private String userName;
 
-    private String userTelephone;
-
-    private String account;
-
-    private String pwd;
-
-    private Integer userState;
-
-    private Integer userRole;
+    private String passWord;
 
     @TableField(exist = false)
     private Long loginTime;
@@ -51,17 +40,28 @@ public class UserInfo implements Serializable, UserDetails {
     public String toString() {
         return "UserInfo{" +
                 "userId=" + userId +
-                ", companyId=" + companyId +
                 ", userName='" + userName + '\'' +
-                ", userTelephone='" + userTelephone + '\'' +
-                ", account='" + account + '\'' +
-                ", pwd='" + pwd + '\'' +
-                ", userState=" + userState +
-                ", userRole=" + userRole +
+                ", passWord='" + passWord + '\'' +
                 ", loginTime=" + loginTime +
                 ", expireTime=" + expireTime +
                 ", token='" + token + '\'' +
                 '}';
+    }
+
+    public String getPassWord() {
+        return passWord;
+    }
+
+    public void setPassWord(String passWord) {
+        this.passWord = passWord;
+    }
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 
     public Long getLoginTime() {
@@ -88,38 +88,6 @@ public class UserInfo implements Serializable, UserDetails {
         this.token = token;
     }
 
-    public String getAccount() {
-        return account;
-    }
-
-    public void setAccount(String account) {
-        this.account = account;
-    }
-
-    public String getPwd() {
-        return pwd;
-    }
-
-    public void setPwd(String pwd) {
-        this.pwd = pwd;
-    }
-
-    public Integer getUserRole() {
-        return userRole;
-    }
-
-    public void setUserRole(Integer userRole) {
-        this.userRole = userRole;
-    }
-
-    public Integer getCompanyId() {
-        return companyId;
-    }
-
-    public void setCompanyId(Integer companyId) {
-        this.companyId = companyId;
-    }
-
     public Integer getUserId() {
         return userId;
     }
@@ -127,31 +95,6 @@ public class UserInfo implements Serializable, UserDetails {
     public void setUserId(Integer userId) {
         this.userId = userId;
     }
-
-    public String getUserName() {
-        return userName;
-    }
-
-    public void setUserName(String userName) {
-        this.userName = userName;
-    }
-
-    public String getUserTelephone() {
-        return userTelephone;
-    }
-
-    public void setUserTelephone(String userTelephone) {
-        this.userTelephone = userTelephone;
-    }
-
-    public Integer getUserState() {
-        return userState;
-    }
-
-    public void setUserState(Integer userState) {
-        this.userState = userState;
-    }
-
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {

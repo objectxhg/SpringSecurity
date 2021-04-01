@@ -32,19 +32,17 @@ public class MySecurityAccountService implements UserDetailsService {
     private UserInfoMapper userInfoMapper;
 
     @Override
-    public UserDetails loadUserByUsername(String account) throws UsernameNotFoundException {
+    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
 
         /**
          * 根据账号查询数据库用户信息
          */
         QueryWrapper<UserInfo> queryWrapper = new QueryWrapper<>();
-        queryWrapper.eq("account", account);
+        queryWrapper.eq("user_name", username);
 
         UserInfo user = userInfoMapper.selectOne(queryWrapper);
 
         logger.info("【MySecurityAccountService】:" + user);
-
-
 
         if(null == user){
             throw new UsernameNotFoundException("登陆账户不存在！");
