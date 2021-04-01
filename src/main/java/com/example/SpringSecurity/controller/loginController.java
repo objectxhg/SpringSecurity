@@ -4,6 +4,7 @@ package com.example.SpringSecurity.controller;
 import com.example.SpringSecurity.config.Security.service.SecurityTokenService;
 import com.example.SpringSecurity.exception.BaseException;
 import com.example.SpringSecurity.pojo.UserInfo;
+import com.example.SpringSecurity.service.UserService;
 import com.example.SpringSecurity.vo.JsonResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -30,12 +31,17 @@ public class loginController {
     @Autowired
     private SecurityTokenService securityTokenService;
 
-    @GetMapping("/home")
-    public String home() {
+    @Resource
+    private UserService userService;
 
+    @PostMapping("/reg")
+    public JsonResult home(String username, String password) {
 
+        Integer state = userService.insertUserService(username, password);
 
-        return "This is home page";
+        if(state == 0) JsonResult.fail("失败");
+
+        return JsonResult.success("成功");
     }
 
 
@@ -43,13 +49,6 @@ public class loginController {
     public JsonResult LoginController(String username, String password){
 
         System.out.println(username + ":"+ password);
-
-//        加密：
-//        BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
-//        final String passHash = encoder.encode(pass);
-//        验证：
-//        boolean matches = encoder.matches(pass, passHash);
-
 
         Authentication authentication = null;
         try {

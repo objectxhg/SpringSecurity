@@ -1,11 +1,9 @@
 package com.example.SpringSecurity.service.Impl;
 
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.example.SpringSecurity.config.Security.SecurityUtil;
 import com.example.SpringSecurity.mapper.UserInfoMapper;
 import com.example.SpringSecurity.pojo.UserInfo;
 import com.example.SpringSecurity.service.UserService;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -31,7 +29,6 @@ public class UserServiceImpl implements UserService {
 
         System.out.println(userInfo);
 
-        BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
         String passHash = SecurityUtil.encodePassword(password);
 
         userInfo.setPassWord(passHash);

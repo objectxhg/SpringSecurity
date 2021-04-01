@@ -80,6 +80,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 // 过滤请求
                 .authorizeRequests()
                 .antMatchers("/login").anonymous()
+                .antMatchers("/reg").anonymous()
                 .antMatchers(
                         HttpMethod.GET,
                         "/*.html",
