@@ -2,30 +2,25 @@ package com.example.SpringSecurity.config.Security;
 
 import com.example.SpringSecurity.config.Security.filter.JwtAuthenticationTokenFilter;
 
-import com.example.SpringSecurity.config.Security.service.MySecurityAccountService;
+import com.example.SpringSecurity.config.Security.handler.MyAuthenticationEntryPoint;
+import com.example.SpringSecurity.config.Security.handler.MyLogoutSuccessHandler;
+
 import org.springframework.beans.factory.annotation.Autowired;
 
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.http.HttpMethod;
-
 import org.springframework.security.authentication.AuthenticationManager;
-
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.config.http.SessionCreationPolicy;
+import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
-import org.springframework.security.web.header.Header;
-import org.springframework.security.web.header.writers.StaticHeadersWriter;
-
-
-import javax.annotation.Resource;
-import java.util.Arrays;
 
 /**
  * @Author Administrator
@@ -33,98 +28,91 @@ import java.util.Arrays;
  */
 @Configuration
 @EnableWebSecurity
+/**
+ * 使用注解对权限进行控制 共有4个注解可用
+ * 本项目采用注解@PreAuthorize，在方法调用之前会根据表达式的计算结果来控制访问权限
+ * 其他三个注解为@PostAuthorize，@PreFilter，@PostFilter
+ */
 @EnableGlobalMethodSecurity(prePostEnabled = true, securedEnabled = true)
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
-
-    @Resource
-    public MySecurityAccountService securityService;
-
     /**
-     * token认证过滤器
+     * 自定义用户认证逻辑
      */
-    @Resource
-    private JwtAuthenticationTokenFilter jwtAuthenticationTokenFilter;
-
+    @Qualifier("userDetailsServiceImpl")
     @Autowired
-    private MyAuthenticationEntryPoint myAuthenticationEntryPoint;
+    private UserDetailsService userDetailsService;
 
     /**
-     * 身份认证接口
+     * 自定义认证失败处理类
      */
-    @Override
-    protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-        /**
-         * springSecurity升级到5.x后,推荐BCryptPasswordEncoder方法加密
-         */
-        auth.userDetailsService(securityService).passwordEncoder(new BCryptPasswordEncoder());
-    }
+    @Autowired
+    private MyAuthenticationEntryPoint unauthorizedHandler;
 
+    /**
+     * 自定义退出处理类
+     */
+    @Autowired
+    private MyLogoutSuccessHandler logoutSuccessHandler;
+
+    /**
+     * 自定义token认证过滤器
+     */
+    @Autowired
+    private JwtAuthenticationTokenFilter authenticationTokenFilter;
+
+    /**
+     * 解决无法直接注入AuthenticationManager的问题
+     */
     @Bean
     @Override
     public AuthenticationManager authenticationManagerBean() throws Exception {
         return super.authenticationManagerBean();
     }
 
-
+    /**
+     * anyRequest          |   匹配所有请求路径
+     * access              |   SpringEl表达式结果为true时可以访问
+     * anonymous           |   匿名可以访问
+     * denyAll             |   用户不能访问
+     * fullyAuthenticated  |   用户完全认证可以访问（非remember-me下自动登录）
+     * hasAnyAuthority     |   如果有参数，参数表示权限，则其中任何一个权限可以访问
+     * hasAnyRole          |   如果有参数，参数表示角色，则其中任何一个角色可以访问
+     * hasAuthority        |   如果有参数，参数表示权限，则其权限可以访问
+     * hasIpAddress        |   如果有参数，参数表示IP地址，如果用户IP和参数匹配，则可以访问
+     * hasRole             |   如果有参数，参数表示角色，则其角色可以访问
+     * permitAll           |   用户可以任意访问
+     * rememberMe          |   允许通过remember-me登录的用户访问
+     * authenticated       |   用户登录后可访问
+     */
     @Override
-    protected void configure(HttpSecurity http) throws Exception {
-
-        http
-                // 开启跨域共享，跨域伪造请求限制=无效
-                .cors().disable()
+    protected void configure(HttpSecurity httpSecurity) throws Exception {
+        httpSecurity
+                // CSRF禁用，因为不使用session
                 .csrf().disable()
+                // 认证失败处理类
+                .exceptionHandling().authenticationEntryPoint(unauthorizedHandler).and()
                 // 基于token，所以不需要session
                 .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS).and()
-                // 过滤请求
+                // 过滤请求，对于登录login，获取验证码captchaImage等允许匿名访问
                 .authorizeRequests()
                 .antMatchers("/login").anonymous()
-                .antMatchers("/reg").anonymous()
-                .antMatchers(
-                        HttpMethod.GET,
-                        "/*.html",
-                        "/**/*.html",
-                        "/**/*.css",
-                        "/**/*.js"
-                ).permitAll()
-                .antMatchers("/swagger-ui.html").anonymous()
-                .antMatchers("/swagger-resources/**").anonymous()
-                .antMatchers("/webjars/**").anonymous()
-                .antMatchers("/*/api-docs").anonymous()
-                .antMatchers("/druid/**").anonymous()
                 // 除上面外的所有请求全部需要鉴权认证
-                .anyRequest().authenticated()
-                .and()
+                .anyRequest().authenticated().and()
+                // 禁止iframe调用
                 .headers().frameOptions().disable();
-
-
-        //对于返回给浏览器的Response的Header也需要添加跨域配置：
-        http.headers().addHeaderWriter(new StaticHeadersWriter(Arrays.asList(
-                //支持所有源的访问
-                new Header("Access-control-Allow-Origin","*"),
-                //使ajax请求能够取到header中的jwt token信息
-                new Header("Access-Control-Expose-Headers","Authorization"))));
-
-        // 添加JWT filter
-        http.addFilterBefore(jwtAuthenticationTokenFilter, UsernamePasswordAuthenticationFilter.class)
-        .exceptionHandling().authenticationEntryPoint(myAuthenticationEntryPoint);
+        // 添加退出成功处理类
+        httpSecurity.logout().logoutUrl("/logout").logoutSuccessHandler(logoutSuccessHandler);
+        // 在UsernamePasswordAuthenticationFilter之前添加JWT filter
+        httpSecurity.addFilterBefore(authenticationTokenFilter, UsernamePasswordAuthenticationFilter.class);
     }
 
     /**
-     * 注册Bean
-     * @return
+     * 身份认证接口
      */
-    @Bean
-    public MySecurityAccountService securityAccountService(){
-        return new MySecurityAccountService();
-    }
-
-    /**
-     * 强散列哈希加密实现
-     */
-    @Bean
-    public BCryptPasswordEncoder bCryptPasswordEncoder(){
-        return new BCryptPasswordEncoder();
+    @Override
+    protected void configure(AuthenticationManagerBuilder auth) throws Exception {
+        auth.userDetailsService(userDetailsService).passwordEncoder(new BCryptPasswordEncoder());
     }
 
 

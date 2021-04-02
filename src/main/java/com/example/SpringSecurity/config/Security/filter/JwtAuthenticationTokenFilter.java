@@ -1,6 +1,6 @@
 package com.example.SpringSecurity.config.Security.filter;
 
-import com.example.SpringSecurity.config.Security.JwtTokenUtil;
+import com.example.SpringSecurity.utils.JwtTokenUtil;
 import com.example.SpringSecurity.config.Security.service.SecurityTokenService;
 import com.example.SpringSecurity.pojo.UserInfo;
 import com.example.SpringSecurity.utils.text.StringUtils;
@@ -52,7 +52,7 @@ public class JwtAuthenticationTokenFilter extends OncePerRequestFilter {
         }
 
         logger.info("【OncePerRequestFilter】：" + user);
-
+        // 不存在生成token
         chain.doFilter(request, response);
 
     }

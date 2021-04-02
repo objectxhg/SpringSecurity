@@ -5,11 +5,13 @@ import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 
 import java.io.Serializable;
 import java.util.Collection;
+import java.util.List;
 
 
 /**
@@ -26,6 +28,9 @@ public class UserInfo implements Serializable, UserDetails {
     private String userName;
 
     private String passWord;
+
+    @TableField(exist = false)
+    private List<SimpleGrantedAuthority> authorities;
 
     @TableField(exist = false)
     private Long loginTime;
@@ -98,17 +103,21 @@ public class UserInfo implements Serializable, UserDetails {
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        return null;
+        return this.authorities;
+    }
+
+    public void setAuthorities(List<SimpleGrantedAuthority> authorities) {
+        this.authorities = authorities;
     }
 
     @Override
     public String getPassword() {
-        return null;
+        return this.passWord;
     }
 
     @Override
     public String getUsername() {
-        return null;
+        return this.userName;
     }
 
     @Override

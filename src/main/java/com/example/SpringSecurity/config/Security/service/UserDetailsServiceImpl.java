@@ -24,9 +24,9 @@ import java.util.List;
  *
  */
 @Service
-public class MySecurityAccountService implements UserDetailsService {
+public class UserDetailsServiceImpl implements UserDetailsService {
 
-    private static final Logger logger = LogManager.getLogger(MySecurityAccountService.class);
+    private static final Logger logger = LogManager.getLogger(UserDetailsServiceImpl.class);
 
     @Resource
     private UserInfoMapper userInfoMapper;
@@ -42,7 +42,7 @@ public class MySecurityAccountService implements UserDetailsService {
 
         UserInfo user = userInfoMapper.selectOne(queryWrapper);
 
-        logger.info("【MySecurityAccountService】:" + user);
+        logger.info("【UserDetailsServiceImpl】:" + user);
 
         if(null == user){
             throw new UsernameNotFoundException("登陆账户不存在！");

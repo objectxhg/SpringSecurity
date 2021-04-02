@@ -1,10 +1,9 @@
 package com.example.SpringSecurity.service.Impl;
 
-import com.example.SpringSecurity.config.Security.SecurityUtil;
+import com.example.SpringSecurity.utils.SecurityUtil;
 import com.example.SpringSecurity.mapper.UserInfoMapper;
 import com.example.SpringSecurity.pojo.UserInfo;
 import com.example.SpringSecurity.service.UserService;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

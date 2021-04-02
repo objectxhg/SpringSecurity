@@ -1,4 +1,4 @@
-package com.example.SpringSecurity.config.Security;
+package com.example.SpringSecurity.utils;
 
 import com.example.SpringSecurity.pojo.UserInfo;
 import org.springframework.http.HttpStatus;
