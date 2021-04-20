@@ -38,7 +38,7 @@ public class GlobalException {
 	public JsonResult resultException(BaseException e){
 
 //		e.printStackTrace();
-		logger.error("-----> Global-Exception： " + e.message);
+		logger.error("-----> Global-BaseException： " + e.message);
 
 		return JsonResult.fail(e.getCode(), e.getMessage());
 	}

@@ -1,0 +1,918 @@
+2021-04-02 10:18:59,444:INFO main (StartupInfoLogger.java:55) - Starting SpringSecurityApplication using Java 1.8.0_271 on DESKTOP-5LGK8HS with PID 10484 (D:\idea-work\SpringSecurity\target\classes started by Administrator in D:\idea-work\SpringSecurity)
+2021-04-02 10:18:59,460:INFO main (SpringApplication.java:662) - No active profile set, falling back to default profiles: default
+2021-04-02 10:19:00,752:INFO main (RepositoryConfigurationDelegate.java:250) - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-04-02 10:19:00,754:INFO main (RepositoryConfigurationDelegate.java:128) - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-04-02 10:19:00,825:INFO main (RepositoryConfigurationDelegate.java:188) - Finished Spring Data repository scanning in 37 ms. Found 0 Redis repository interfaces.
+2021-04-02 10:19:01,371:INFO main (PostProcessorRegistrationDelegate.java:376) - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@6a0cbc6f' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-02 10:19:01,376:INFO main (PostProcessorRegistrationDelegate.java:376) - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-02 10:19:01,770:INFO main (TomcatWebServer.java:108) - Tomcat initialized with port(s): 9200 (http)
+2021-04-02 10:19:01,781:INFO main (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-9200"]
+2021-04-02 10:19:01,781:INFO main (DirectJDKLog.java:173) - Starting service [Tomcat]
+2021-04-02 10:19:01,781:INFO main (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-02 10:19:01,873:INFO main (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2021-04-02 10:19:01,873:INFO main (ServletWebServerApplicationContext.java:289) - Root WebApplicationContext: initialization completed in 2324 ms
+2021-04-02 10:19:02,717:INFO main (DruidDataSource.java:930) - {dataSource-1} inited
+2021-04-02 10:19:03,386:INFO main (DefaultSecurityFilterChain.java:51) - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@136ccbfe, org.springframework.security.web.context.SecurityContextPersistenceFilter@2fd72332, org.springframework.security.web.header.HeaderWriterFilter@106b014e, org.springframework.security.web.authentication.logout.LogoutFilter@6707a4bf, com.example.SpringSecurity.config.Security.filter.JwtAuthenticationTokenFilter@358ab600, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@60ed12e8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2f80cb79, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@22d9ca63, org.springframework.security.web.session.SessionManagementFilter@bf75b5c, org.springframework.security.web.access.ExceptionTranslationFilter@ab24484, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@49e2b3c5]
+2021-04-02 10:19:03,604:INFO main (ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-02 10:19:03,917:INFO main (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-9200"]
+2021-04-02 10:19:03,936:INFO main (TomcatWebServer.java:220) - Tomcat started on port(s): 9200 (http) with context path ''
+2021-04-02 10:19:03,948:INFO main (StartupInfoLogger.java:61) - Started SpringSecurityApplication in 5.419 seconds (JVM running for 6.334)
+2021-04-02 10:25:08,699:INFO http-nio-9200-exec-1 (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-02 10:25:08,699:INFO http-nio-9200-exec-1 (FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+2021-04-02 10:25:08,700:INFO http-nio-9200-exec-1 (FrameworkServlet.java:547) - Completed initialization in 1 ms
+2021-04-02 10:25:08,723:INFO http-nio-9200-exec-1 (JwtAuthenticationTokenFilter.java:54) - 【OncePerRequestFilter】：null
+2021-04-02 10:25:08,895:DEBUG http-nio-9200-exec-1 (BaseJdbcLogger.java:143) - ==>  Preparing: SELECT user_id,user_name,pass_word FROM userInfo WHERE user_name = ? 
+2021-04-02 10:25:08,919:DEBUG http-nio-9200-exec-1 (BaseJdbcLogger.java:143) - ==> Parameters: xhg(String)
+2021-04-02 10:25:08,943:DEBUG http-nio-9200-exec-1 (BaseJdbcLogger.java:143) - <==      Total: 1
+2021-04-02 10:25:08,944:INFO http-nio-9200-exec-1 (MySecurityAccountService.java:45) - 【MySecurityAccountService】:UserInfo{userId=2, userName='xhg', passWord='$2a$10$qx6EUoN3fTJ.4qn.ixhtv.t5RpNEIF4QeopWZKraznqCwnt2d1Ji.', loginTime=null, expireTime=null, token='null'}
+2021-04-02 10:25:08,944:WARN http-nio-9200-exec-1 (BCryptPasswordEncoder.java:126) - Empty encoded password
+2021-04-02 11:01:54,298:INFO main (StartupInfoLogger.java:55) - Starting SpringSecurityApplication using Java 1.8.0_271 on DESKTOP-5LGK8HS with PID 1332 (D:\idea-work\SpringSecurity\target\classes started by Administrator in D:\idea-work\SpringSecurity)
+2021-04-02 11:01:54,303:INFO main (SpringApplication.java:662) - No active profile set, falling back to default profiles: default
+2021-04-02 11:01:54,694:INFO main (RepositoryConfigurationDelegate.java:250) - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-04-02 11:01:54,695:INFO main (RepositoryConfigurationDelegate.java:128) - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-04-02 11:01:54,711:INFO main (RepositoryConfigurationDelegate.java:188) - Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2021-04-02 11:01:54,866:INFO main (PostProcessorRegistrationDelegate.java:376) - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@3ae2ed38' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-02 11:01:54,869:INFO main (PostProcessorRegistrationDelegate.java:376) - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-02 11:01:54,993:INFO main (TomcatWebServer.java:108) - Tomcat initialized with port(s): 9200 (http)
+2021-04-02 11:01:54,998:INFO main (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-9200"]
+2021-04-02 11:01:54,998:INFO main (DirectJDKLog.java:173) - Starting service [Tomcat]
+2021-04-02 11:01:54,998:INFO main (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-02 11:01:55,044:INFO main (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2021-04-02 11:01:55,044:INFO main (ServletWebServerApplicationContext.java:289) - Root WebApplicationContext: initialization completed in 715 ms
+2021-04-02 11:01:55,349:INFO main (DruidDataSource.java:930) - {dataSource-1} inited
+2021-04-02 11:01:55,639:INFO main (DefaultSecurityFilterChain.java:51) - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@70a898b0, org.springframework.security.web.context.SecurityContextPersistenceFilter@4816ee24, org.springframework.security.web.header.HeaderWriterFilter@2fd72332, org.springframework.security.web.authentication.logout.LogoutFilter@104dc1a2, com.example.SpringSecurity.config.Security.filter.JwtAuthenticationTokenFilter@3c78e551, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@73613ae5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1c33e528, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7bdf61ad, org.springframework.security.web.session.SessionManagementFilter@2bbb44da, org.springframework.security.web.access.ExceptionTranslationFilter@bf75b5c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4f2d014a]
+2021-04-02 11:01:55,717:INFO main (ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-02 11:01:55,889:INFO main (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-9200"]
+2021-04-02 11:01:55,908:INFO main (TomcatWebServer.java:220) - Tomcat started on port(s): 9200 (http) with context path ''
+2021-04-02 11:01:55,914:INFO main (StartupInfoLogger.java:61) - Started SpringSecurityApplication in 1.945 seconds (JVM running for 2.425)
+2021-04-02 11:02:03,098:INFO http-nio-9200-exec-2 (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-02 11:02:03,099:INFO http-nio-9200-exec-2 (FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+2021-04-02 11:02:03,099:INFO http-nio-9200-exec-2 (FrameworkServlet.java:547) - Completed initialization in 0 ms
+2021-04-02 11:02:03,110:INFO http-nio-9200-exec-2 (JwtAuthenticationTokenFilter.java:54) - 【OncePerRequestFilter】：null
+2021-04-02 11:02:03,232:DEBUG http-nio-9200-exec-2 (BaseJdbcLogger.java:143) - ==>  Preparing: SELECT user_id,user_name,pass_word FROM userInfo WHERE user_name = ? 
+2021-04-02 11:02:03,245:DEBUG http-nio-9200-exec-2 (BaseJdbcLogger.java:143) - ==> Parameters: xhg(String)
+2021-04-02 11:02:03,257:DEBUG http-nio-9200-exec-2 (BaseJdbcLogger.java:143) - <==      Total: 1
+2021-04-02 11:02:03,258:INFO http-nio-9200-exec-2 (MySecurityAccountService.java:45) - 【MySecurityAccountService】:UserInfo{userId=2, userName='xhg', passWord='$2a$10$qx6EUoN3fTJ.4qn.ixhtv.t5RpNEIF4QeopWZKraznqCwnt2d1Ji.', loginTime=null, expireTime=null, token='null'}
+2021-04-02 11:02:03,258:WARN http-nio-9200-exec-2 (BCryptPasswordEncoder.java:126) - Empty encoded password
+2021-04-02 11:02:14,330:INFO main (StartupInfoLogger.java:55) - Starting SpringSecurityApplication using Java 1.8.0_271 on DESKTOP-5LGK8HS with PID 6028 (D:\idea-work\SpringSecurity\target\classes started by Administrator in D:\idea-work\SpringSecurity)
+2021-04-02 11:02:14,336:INFO main (SpringApplication.java:662) - No active profile set, falling back to default profiles: default
+2021-04-02 11:02:14,767:INFO main (RepositoryConfigurationDelegate.java:250) - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-04-02 11:02:14,768:INFO main (RepositoryConfigurationDelegate.java:128) - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-04-02 11:02:14,786:INFO main (RepositoryConfigurationDelegate.java:188) - Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2021-04-02 11:02:14,960:INFO main (PostProcessorRegistrationDelegate.java:376) - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@4dde8976' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-02 11:02:14,965:INFO main (PostProcessorRegistrationDelegate.java:376) - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-02 11:02:15,117:INFO main (TomcatWebServer.java:108) - Tomcat initialized with port(s): 9200 (http)
+2021-04-02 11:02:15,124:INFO main (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-9200"]
+2021-04-02 11:02:15,124:INFO main (DirectJDKLog.java:173) - Starting service [Tomcat]
+2021-04-02 11:02:15,124:INFO main (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-02 11:02:15,185:INFO main (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2021-04-02 11:02:15,185:INFO main (ServletWebServerApplicationContext.java:289) - Root WebApplicationContext: initialization completed in 802 ms
+2021-04-02 11:02:15,635:INFO main (DruidDataSource.java:930) - {dataSource-1} inited
+2021-04-02 11:02:15,988:INFO main (DefaultSecurityFilterChain.java:51) - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4bbf20d1, org.springframework.security.web.context.SecurityContextPersistenceFilter@682266d8, org.springframework.security.web.header.HeaderWriterFilter@525b8922, org.springframework.security.web.authentication.logout.LogoutFilter@1201e064, com.example.SpringSecurity.config.Security.filter.JwtAuthenticationTokenFilter@54495935, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@26463a6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@608b35fa, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6fced25c, org.springframework.security.web.session.SessionManagementFilter@45707f76, org.springframework.security.web.access.ExceptionTranslationFilter@7ba06506, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@370225c7]
+2021-04-02 11:02:16,077:INFO main (ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-02 11:02:16,292:INFO main (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-9200"]
+2021-04-02 11:02:16,303:INFO main (TomcatWebServer.java:220) - Tomcat started on port(s): 9200 (http) with context path ''
+2021-04-02 11:02:16,310:INFO main (StartupInfoLogger.java:61) - Started SpringSecurityApplication in 2.329 seconds (JVM running for 3.446)
+2021-04-02 11:02:21,383:INFO http-nio-9200-exec-2 (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-02 11:02:21,383:INFO http-nio-9200-exec-2 (FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+2021-04-02 11:02:21,384:INFO http-nio-9200-exec-2 (FrameworkServlet.java:547) - Completed initialization in 1 ms
+2021-04-02 11:02:57,760:INFO http-nio-9200-exec-2 (JwtAuthenticationTokenFilter.java:54) - 【OncePerRequestFilter】：null
+2021-04-02 11:03:38,618:DEBUG http-nio-9200-exec-2 (BaseJdbcLogger.java:143) - ==>  Preparing: SELECT user_id,user_name,pass_word FROM userInfo WHERE user_name = ? 
+2021-04-02 11:03:38,810:DEBUG http-nio-9200-exec-2 (BaseJdbcLogger.java:143) - ==> Parameters: xhg(String)
+2021-04-02 11:03:38,962:DEBUG http-nio-9200-exec-2 (BaseJdbcLogger.java:143) - <==      Total: 1
+2021-04-02 11:03:41,478:INFO http-nio-9200-exec-2 (MySecurityAccountService.java:45) - 【MySecurityAccountService】:UserInfo{userId=2, userName='xhg', passWord='$2a$10$qx6EUoN3fTJ.4qn.ixhtv.t5RpNEIF4QeopWZKraznqCwnt2d1Ji.', loginTime=null, expireTime=null, token='null'}
+2021-04-02 11:04:49,326:WARN http-nio-9200-exec-2 (BCryptPasswordEncoder.java:126) - Empty encoded password
+2021-04-02 11:26:07,956:INFO SpringContextShutdownHook (ExecutorConfigurationSupport.java:218) - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-02 11:26:07,961:INFO SpringContextShutdownHook (DruidDataSource.java:1825) - {dataSource-1} closed
+2021-04-02 16:01:12,693:INFO main (StartupInfoLogger.java:55) - Starting SpringSecurityApplication using Java 1.8.0_271 on DESKTOP-5LGK8HS with PID 16348 (D:\idea-work\SpringSecurity\target\classes started by Administrator in D:\idea-work\SpringSecurity)
+2021-04-02 16:01:12,699:INFO main (SpringApplication.java:662) - No active profile set, falling back to default profiles: default
+2021-04-02 16:01:13,074:INFO main (RepositoryConfigurationDelegate.java:250) - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-04-02 16:01:13,075:INFO main (RepositoryConfigurationDelegate.java:128) - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-04-02 16:01:13,090:INFO main (RepositoryConfigurationDelegate.java:188) - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2021-04-02 16:01:13,230:INFO main (PostProcessorRegistrationDelegate.java:376) - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@724c5cbe' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-02 16:01:13,233:INFO main (PostProcessorRegistrationDelegate.java:376) - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-02 16:01:13,355:INFO main (TomcatWebServer.java:108) - Tomcat initialized with port(s): 9200 (http)
+2021-04-02 16:01:13,360:INFO main (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-9200"]
+2021-04-02 16:01:13,361:INFO main (DirectJDKLog.java:173) - Starting service [Tomcat]
+2021-04-02 16:01:13,361:INFO main (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-02 16:01:13,409:INFO main (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2021-04-02 16:01:13,409:INFO main (ServletWebServerApplicationContext.java:289) - Root WebApplicationContext: initialization completed in 668 ms
+2021-04-02 16:01:13,758:INFO main (DruidDataSource.java:930) - {dataSource-1} inited
+2021-04-02 16:01:13,940:WARN main (AbstractApplicationContext.java:591) - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webSecurityConfig': Unsatisfied dependency expressed through field 'unauthorizedHandler'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.example.SpringSecurity.config.Security.handler.MyAuthenticationEntryPoint' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2021-04-02 16:01:13,943:INFO main (DruidDataSource.java:1825) - {dataSource-1} closed
+2021-04-02 16:01:13,951:INFO main (DirectJDKLog.java:173) - Stopping service [Tomcat]
+2021-04-02 16:01:13,958:INFO main (ConditionEvaluationReportLoggingListener.java:136) - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-04-02 16:01:14,008:ERROR main (LoggingFailureAnalysisReporter.java:40) - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field unauthorizedHandler in com.example.SpringSecurity.config.Security.WebSecurityConfig required a bean of type 'com.example.SpringSecurity.config.Security.handler.MyAuthenticationEntryPoint' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.example.SpringSecurity.config.Security.handler.MyAuthenticationEntryPoint' in your configuration.
+
+2021-04-02 16:02:08,354:INFO main (StartupInfoLogger.java:55) - Starting SpringSecurityApplication using Java 1.8.0_271 on DESKTOP-5LGK8HS with PID 16380 (D:\idea-work\SpringSecurity\target\classes started by Administrator in D:\idea-work\SpringSecurity)
+2021-04-02 16:02:08,360:INFO main (SpringApplication.java:662) - No active profile set, falling back to default profiles: default
+2021-04-02 16:02:08,755:INFO main (RepositoryConfigurationDelegate.java:250) - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-04-02 16:02:08,756:INFO main (RepositoryConfigurationDelegate.java:128) - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-04-02 16:02:08,771:INFO main (RepositoryConfigurationDelegate.java:188) - Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2021-04-02 16:02:08,916:INFO main (PostProcessorRegistrationDelegate.java:376) - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@4d7aaca2' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-02 16:02:08,919:INFO main (PostProcessorRegistrationDelegate.java:376) - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-02 16:02:09,042:INFO main (TomcatWebServer.java:108) - Tomcat initialized with port(s): 9200 (http)
+2021-04-02 16:02:09,047:INFO main (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-9200"]
+2021-04-02 16:02:09,048:INFO main (DirectJDKLog.java:173) - Starting service [Tomcat]
+2021-04-02 16:02:09,048:INFO main (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-02 16:02:09,094:INFO main (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2021-04-02 16:02:09,094:INFO main (ServletWebServerApplicationContext.java:289) - Root WebApplicationContext: initialization completed in 689 ms
+2021-04-02 16:02:09,449:INFO main (DruidDataSource.java:930) - {dataSource-1} inited
+2021-04-02 16:02:09,723:INFO main (DefaultSecurityFilterChain.java:51) - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@70d77826, org.springframework.security.web.context.SecurityContextPersistenceFilter@2fbe26da, org.springframework.security.web.header.HeaderWriterFilter@161dd92a, org.springframework.security.web.authentication.logout.LogoutFilter@6fcd31c3, com.example.SpringSecurity.config.Security.filter.JwtAuthenticationTokenFilter@feb98ef, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6963b88c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2e43c38d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7f323b3a, org.springframework.security.web.session.SessionManagementFilter@712ac7e6, org.springframework.security.web.access.ExceptionTranslationFilter@51bddd98, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3a401749]
+2021-04-02 16:02:09,802:INFO main (ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-02 16:02:09,976:INFO main (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-9200"]
+2021-04-02 16:02:09,995:INFO main (TomcatWebServer.java:220) - Tomcat started on port(s): 9200 (http) with context path ''
+2021-04-02 16:02:10,001:INFO main (StartupInfoLogger.java:61) - Started SpringSecurityApplication in 1.962 seconds (JVM running for 2.446)
+2021-04-02 16:03:54,026:INFO http-nio-9200-exec-1 (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-02 16:03:54,026:INFO http-nio-9200-exec-1 (FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+2021-04-02 16:03:54,027:INFO http-nio-9200-exec-1 (FrameworkServlet.java:547) - Completed initialization in 1 ms
+2021-04-02 16:03:54,038:INFO http-nio-9200-exec-1 (JwtAuthenticationTokenFilter.java:54) - 【OncePerRequestFilter】：null
+2021-04-02 16:03:58,461:INFO http-nio-9200-exec-6 (JwtAuthenticationTokenFilter.java:54) - 【OncePerRequestFilter】：null
+2021-04-02 16:03:58,587:DEBUG http-nio-9200-exec-6 (BaseJdbcLogger.java:143) - ==>  Preparing: SELECT user_id,user_name,pass_word FROM userInfo WHERE user_name = ? 
+2021-04-02 16:03:58,601:DEBUG http-nio-9200-exec-6 (BaseJdbcLogger.java:143) - ==> Parameters: xhg(String)
+2021-04-02 16:03:58,620:DEBUG http-nio-9200-exec-6 (BaseJdbcLogger.java:143) - <==      Total: 1
+2021-04-02 16:03:58,621:INFO http-nio-9200-exec-6 (UserDetailsServiceImpl.java:45) - 【MySecurityAccountService】:UserInfo{userId=2, userName='xhg', passWord='$2a$10$qx6EUoN3fTJ.4qn.ixhtv.t5RpNEIF4QeopWZKraznqCwnt2d1Ji.', loginTime=null, expireTime=null, token='null'}
+2021-04-02 16:03:58,621:WARN http-nio-9200-exec-6 (BCryptPasswordEncoder.java:126) - Empty encoded password
+2021-04-02 16:04:07,616:ERROR http-nio-9200-exec-4 (DirectJDKLog.java:175) - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+io.jsonwebtoken.SignatureException: JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:354) ~[jjwt-0.9.1.jar:0.9.1]
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:481) ~[jjwt-0.9.1.jar:0.9.1]
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:541) ~[jjwt-0.9.1.jar:0.9.1]
+	at com.example.SpringSecurity.config.Security.service.SecurityTokenService.parseToken(SecurityTokenService.java:179) ~[classes/:?]
+	at com.example.SpringSecurity.config.Security.service.SecurityTokenService.getLoginUser(SecurityTokenService.java:58) ~[classes/:?]
+	at com.example.SpringSecurity.config.Security.filter.JwtAuthenticationTokenFilter.doFilterInternal(JwtAuthenticationTokenFilter.java:45) ~[classes/:?]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.5.jar:5.3.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103) ~[spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89) ~[spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.5.jar:5.3.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110) ~[spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80) ~[spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55) ~[spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.5.jar:5.3.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211) ~[spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183) ~[spring-security-web-5.4.5.jar:5.4.5]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358) ~[spring-web-5.3.5.jar:5.3.5]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271) ~[spring-web-5.3.5.jar:5.3.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.5.jar:5.3.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.5.jar:5.3.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.5.jar:5.3.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.5.jar:5.3.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.5.jar:5.3.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.5.jar:5.3.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) [tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) [tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) [tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893) [tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707) [tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.44.jar:9.0.44]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_271]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_271]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.44.jar:9.0.44]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_271]
+2021-04-02 16:04:29,662:INFO http-nio-9200-exec-10 (JwtAuthenticationTokenFilter.java:54) - 【OncePerRequestFilter】：null
+2021-04-02 16:04:29,665:DEBUG http-nio-9200-exec-10 (BaseJdbcLogger.java:143) - ==>  Preparing: SELECT user_id,user_name,pass_word FROM userInfo WHERE user_name = ? 
+2021-04-02 16:04:29,666:DEBUG http-nio-9200-exec-10 (BaseJdbcLogger.java:143) - ==> Parameters: xhg(String)
+2021-04-02 16:04:29,667:DEBUG http-nio-9200-exec-10 (BaseJdbcLogger.java:143) - <==      Total: 1
+2021-04-02 16:04:29,667:INFO http-nio-9200-exec-10 (UserDetailsServiceImpl.java:45) - 【MySecurityAccountService】:UserInfo{userId=2, userName='xhg', passWord='$2a$10$qx6EUoN3fTJ.4qn.ixhtv.t5RpNEIF4QeopWZKraznqCwnt2d1Ji.', loginTime=null, expireTime=null, token='null'}
+2021-04-02 16:04:29,668:WARN http-nio-9200-exec-10 (BCryptPasswordEncoder.java:126) - Empty encoded password
+2021-04-02 16:05:07,105:INFO http-nio-9200-exec-2 (JwtAuthenticationTokenFilter.java:54) - 【OncePerRequestFilter】：null
+2021-04-02 16:05:07,108:DEBUG http-nio-9200-exec-2 (BaseJdbcLogger.java:143) - ==>  Preparing: SELECT user_id,user_name,pass_word FROM userInfo WHERE user_name = ? 
+2021-04-02 16:05:07,109:DEBUG http-nio-9200-exec-2 (BaseJdbcLogger.java:143) - ==> Parameters: NONE_PROVIDED(String)
+2021-04-02 16:05:07,110:DEBUG http-nio-9200-exec-2 (BaseJdbcLogger.java:143) - <==      Total: 0
+2021-04-02 16:05:07,110:INFO http-nio-9200-exec-2 (UserDetailsServiceImpl.java:45) - 【MySecurityAccountService】:null
+2021-04-02 16:05:20,559:INFO http-nio-9200-exec-7 (JwtAuthenticationTokenFilter.java:54) - 【OncePerRequestFilter】：null
+2021-04-02 16:05:20,561:DEBUG http-nio-9200-exec-7 (BaseJdbcLogger.java:143) - ==>  Preparing: SELECT user_id,user_name,pass_word FROM userInfo WHERE user_name = ? 
+2021-04-02 16:05:20,561:DEBUG http-nio-9200-exec-7 (BaseJdbcLogger.java:143) - ==> Parameters: NONE_PROVIDED(String)
+2021-04-02 16:05:20,561:DEBUG http-nio-9200-exec-7 (BaseJdbcLogger.java:143) - <==      Total: 0
+2021-04-02 16:05:20,562:INFO http-nio-9200-exec-7 (UserDetailsServiceImpl.java:45) - 【MySecurityAccountService】:null
+2021-04-02 16:08:51,971:INFO main (StartupInfoLogger.java:55) - Starting SpringSecurityApplication using Java 1.8.0_271 on DESKTOP-5LGK8HS with PID 3660 (D:\idea-work\SpringSecurity\target\classes started by Administrator in D:\idea-work\SpringSecurity)
+2021-04-02 16:08:51,976:INFO main (SpringApplication.java:662) - No active profile set, falling back to default profiles: default
+2021-04-02 16:08:52,355:INFO main (RepositoryConfigurationDelegate.java:250) - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-04-02 16:08:52,356:INFO main (RepositoryConfigurationDelegate.java:128) - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-04-02 16:08:52,371:INFO main (RepositoryConfigurationDelegate.java:188) - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2021-04-02 16:08:52,510:INFO main (PostProcessorRegistrationDelegate.java:376) - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@7d070ef5' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-02 16:08:52,513:INFO main (PostProcessorRegistrationDelegate.java:376) - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-02 16:08:52,633:INFO main (TomcatWebServer.java:108) - Tomcat initialized with port(s): 9200 (http)
+2021-04-02 16:08:52,638:INFO main (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-9200"]
+2021-04-02 16:08:52,638:INFO main (DirectJDKLog.java:173) - Starting service [Tomcat]
+2021-04-02 16:08:52,639:INFO main (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-02 16:08:52,686:INFO main (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2021-04-02 16:08:52,686:INFO main (ServletWebServerApplicationContext.java:289) - Root WebApplicationContext: initialization completed in 685 ms
+2021-04-02 16:08:53,022:INFO main (DruidDataSource.java:930) - {dataSource-1} inited
+2021-04-02 16:08:53,295:INFO main (DefaultSecurityFilterChain.java:51) - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@839df62, org.springframework.security.web.context.SecurityContextPersistenceFilter@7c369270, org.springframework.security.web.header.HeaderWriterFilter@235b4cb8, org.springframework.security.web.authentication.logout.LogoutFilter@4816ee24, com.example.SpringSecurity.config.Security.filter.JwtAuthenticationTokenFilter@a50d709, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@41d16cc3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@51f18e31, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@76e90da5, org.springframework.security.web.session.SessionManagementFilter@106b014e, org.springframework.security.web.access.ExceptionTranslationFilter@10e5bf9c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7f323b3a]
+2021-04-02 16:08:53,376:INFO main (ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-02 16:08:53,549:INFO main (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-9200"]
+2021-04-02 16:08:53,559:INFO main (TomcatWebServer.java:220) - Tomcat started on port(s): 9200 (http) with context path ''
+2021-04-02 16:08:53,565:INFO main (StartupInfoLogger.java:61) - Started SpringSecurityApplication in 1.923 seconds (JVM running for 2.415)
+2021-04-02 16:08:59,064:INFO http-nio-9200-exec-5 (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-02 16:08:59,065:INFO http-nio-9200-exec-5 (FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+2021-04-02 16:08:59,065:INFO http-nio-9200-exec-5 (FrameworkServlet.java:547) - Completed initialization in 0 ms
+2021-04-02 16:08:59,076:INFO http-nio-9200-exec-5 (JwtAuthenticationTokenFilter.java:54) - 【OncePerRequestFilter】：null
+2021-04-02 16:08:59,258:DEBUG http-nio-9200-exec-5 (BaseJdbcLogger.java:143) - ==>  Preparing: SELECT user_id,user_name,pass_word FROM userInfo WHERE user_name = ? 
+2021-04-02 16:08:59,270:DEBUG http-nio-9200-exec-5 (BaseJdbcLogger.java:143) - ==> Parameters: NONE_PROVIDED(String)
+2021-04-02 16:08:59,281:DEBUG http-nio-9200-exec-5 (BaseJdbcLogger.java:143) - <==      Total: 0
+2021-04-02 16:08:59,282:INFO http-nio-9200-exec-5 (UserDetailsServiceImpl.java:45) - 【MySecurityAccountService】:null
+2021-04-02 16:13:14,305:INFO http-nio-9200-exec-6 (JwtAuthenticationTokenFilter.java:54) - 【OncePerRequestFilter】：null
+2021-04-02 16:13:14,311:DEBUG http-nio-9200-exec-6 (BaseJdbcLogger.java:143) - ==>  Preparing: SELECT user_id,user_name,pass_word FROM userInfo WHERE user_name = ? 
+2021-04-02 16:13:14,312:DEBUG http-nio-9200-exec-6 (BaseJdbcLogger.java:143) - ==> Parameters: NONE_PROVIDED(String)
+2021-04-02 16:13:14,312:DEBUG http-nio-9200-exec-6 (BaseJdbcLogger.java:143) - <==      Total: 0
+2021-04-02 16:13:14,313:INFO http-nio-9200-exec-6 (UserDetailsServiceImpl.java:45) - 【MySecurityAccountService】:null
+2021-04-02 16:21:40,508:INFO main (StartupInfoLogger.java:55) - Starting SpringSecurityApplication using Java 1.8.0_271 on DESKTOP-5LGK8HS with PID 15308 (D:\idea-work\SpringSecurity\target\classes started by Administrator in D:\idea-work\SpringSecurity)
+2021-04-02 16:21:40,514:INFO main (SpringApplication.java:662) - No active profile set, falling back to default profiles: default
+2021-04-02 16:21:40,889:INFO main (RepositoryConfigurationDelegate.java:250) - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-04-02 16:21:40,890:INFO main (RepositoryConfigurationDelegate.java:128) - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-04-02 16:21:40,906:INFO main (RepositoryConfigurationDelegate.java:188) - Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2021-04-02 16:21:41,051:INFO main (PostProcessorRegistrationDelegate.java:376) - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@75798d03' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-02 16:21:41,055:INFO main (PostProcessorRegistrationDelegate.java:376) - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-02 16:21:41,181:INFO main (TomcatWebServer.java:108) - Tomcat initialized with port(s): 9200 (http)
+2021-04-02 16:21:41,186:INFO main (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-9200"]
+2021-04-02 16:21:41,186:INFO main (DirectJDKLog.java:173) - Starting service [Tomcat]
+2021-04-02 16:21:41,186:INFO main (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-02 16:21:41,233:INFO main (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2021-04-02 16:21:41,233:INFO main (ServletWebServerApplicationContext.java:289) - Root WebApplicationContext: initialization completed in 695 ms
+2021-04-02 16:21:41,578:INFO main (DruidDataSource.java:930) - {dataSource-1} inited
+2021-04-02 16:21:41,853:INFO main (DefaultSecurityFilterChain.java:51) - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@217c23ce, org.springframework.security.web.context.SecurityContextPersistenceFilter@2e62ead7, org.springframework.security.web.header.HeaderWriterFilter@4ed15347, org.springframework.security.web.authentication.logout.LogoutFilter@34be065a, com.example.SpringSecurity.config.Security.filter.JwtAuthenticationTokenFilter@2c88a3e8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@bf75b5c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5503de1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@39de9bda, org.springframework.security.web.session.SessionManagementFilter@2e43c38d, org.springframework.security.web.access.ExceptionTranslationFilter@17fede14, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@839df62]
+2021-04-02 16:21:41,937:INFO main (ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-02 16:21:42,145:INFO main (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-9200"]
+2021-04-02 16:21:42,159:INFO main (TomcatWebServer.java:220) - Tomcat started on port(s): 9200 (http) with context path ''
+2021-04-02 16:21:42,174:INFO main (StartupInfoLogger.java:61) - Started SpringSecurityApplication in 2.008 seconds (JVM running for 2.474)
+2021-04-02 16:22:04,678:INFO http-nio-9200-exec-3 (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-02 16:22:04,678:INFO http-nio-9200-exec-3 (FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+2021-04-02 16:22:04,679:INFO http-nio-9200-exec-3 (FrameworkServlet.java:547) - Completed initialization in 1 ms
+2021-04-02 16:22:04,690:INFO http-nio-9200-exec-3 (JwtAuthenticationTokenFilter.java:54) - 【OncePerRequestFilter】：null
+2021-04-02 16:22:04,843:DEBUG http-nio-9200-exec-3 (BaseJdbcLogger.java:143) - ==>  Preparing: SELECT user_id,user_name,pass_word FROM userInfo WHERE user_name = ? 
+2021-04-02 16:22:04,856:DEBUG http-nio-9200-exec-3 (BaseJdbcLogger.java:143) - ==> Parameters: NONE_PROVIDED(String)
+2021-04-02 16:22:04,867:DEBUG http-nio-9200-exec-3 (BaseJdbcLogger.java:143) - <==      Total: 0
+2021-04-02 16:22:04,868:INFO http-nio-9200-exec-3 (UserDetailsServiceImpl.java:45) - 【UserDetailsServiceImpl】:null
+2021-04-02 16:22:47,186:INFO main (StartupInfoLogger.java:55) - Starting SpringSecurityApplication using Java 1.8.0_271 on DESKTOP-5LGK8HS with PID 7684 (D:\idea-work\SpringSecurity\target\classes started by Administrator in D:\idea-work\SpringSecurity)
+2021-04-02 16:22:47,191:INFO main (SpringApplication.java:662) - No active profile set, falling back to default profiles: default
+2021-04-02 16:22:47,592:INFO main (RepositoryConfigurationDelegate.java:250) - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-04-02 16:22:47,594:INFO main (RepositoryConfigurationDelegate.java:128) - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-04-02 16:22:47,609:INFO main (RepositoryConfigurationDelegate.java:188) - Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2021-04-02 16:22:47,753:INFO main (PostProcessorRegistrationDelegate.java:376) - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@37191ef0' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-02 16:22:47,756:INFO main (PostProcessorRegistrationDelegate.java:376) - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-02 16:22:47,876:INFO main (TomcatWebServer.java:108) - Tomcat initialized with port(s): 9200 (http)
+2021-04-02 16:22:47,881:INFO main (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-9200"]
+2021-04-02 16:22:47,882:INFO main (DirectJDKLog.java:173) - Starting service [Tomcat]
+2021-04-02 16:22:47,882:INFO main (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-02 16:22:47,928:INFO main (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2021-04-02 16:22:47,929:INFO main (ServletWebServerApplicationContext.java:289) - Root WebApplicationContext: initialization completed in 709 ms
+2021-04-02 16:22:48,259:INFO main (DruidDataSource.java:930) - {dataSource-1} inited
+2021-04-02 16:22:48,530:INFO main (DefaultSecurityFilterChain.java:51) - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7793ad58, org.springframework.security.web.context.SecurityContextPersistenceFilter@235b4cb8, org.springframework.security.web.header.HeaderWriterFilter@48a2db72, org.springframework.security.web.authentication.logout.LogoutFilter@2fd72332, com.example.SpringSecurity.config.Security.filter.JwtAuthenticationTokenFilter@571a01f9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@17fede14, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@64387c17, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@27e2287c, org.springframework.security.web.session.SessionManagementFilter@1624775, org.springframework.security.web.access.ExceptionTranslationFilter@49fb0bbd, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@75cf0de5]
+2021-04-02 16:22:48,609:INFO main (ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-02 16:22:48,778:INFO main (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-9200"]
+2021-04-02 16:22:48,796:INFO main (TomcatWebServer.java:220) - Tomcat started on port(s): 9200 (http) with context path ''
+2021-04-02 16:22:48,802:INFO main (StartupInfoLogger.java:61) - Started SpringSecurityApplication in 1.946 seconds (JVM running for 2.42)
+2021-04-02 16:22:54,474:INFO http-nio-9200-exec-1 (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-02 16:22:54,474:INFO http-nio-9200-exec-1 (FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+2021-04-02 16:22:54,475:INFO http-nio-9200-exec-1 (FrameworkServlet.java:547) - Completed initialization in 1 ms
+2021-04-02 16:22:54,486:INFO http-nio-9200-exec-1 (JwtAuthenticationTokenFilter.java:54) - 【OncePerRequestFilter】：null
+2021-04-02 16:22:54,638:DEBUG http-nio-9200-exec-1 (BaseJdbcLogger.java:143) - ==>  Preparing: SELECT user_id,user_name,pass_word FROM userInfo WHERE user_name = ? 
+2021-04-02 16:22:54,651:DEBUG http-nio-9200-exec-1 (BaseJdbcLogger.java:143) - ==> Parameters: NONE_PROVIDED(String)
+2021-04-02 16:22:54,662:DEBUG http-nio-9200-exec-1 (BaseJdbcLogger.java:143) - <==      Total: 0
+2021-04-02 16:22:54,663:INFO http-nio-9200-exec-1 (UserDetailsServiceImpl.java:45) - 【UserDetailsServiceImpl】:null
+2021-04-02 16:23:34,329:INFO http-nio-9200-exec-3 (JwtAuthenticationTokenFilter.java:54) - 【OncePerRequestFilter】：null
+2021-04-02 16:23:34,331:DEBUG http-nio-9200-exec-3 (BaseJdbcLogger.java:143) - ==>  Preparing: SELECT user_id,user_name,pass_word FROM userInfo WHERE user_name = ? 
+2021-04-02 16:23:34,332:DEBUG http-nio-9200-exec-3 (BaseJdbcLogger.java:143) - ==> Parameters: NONE_PROVIDED(String)
+2021-04-02 16:23:34,332:DEBUG http-nio-9200-exec-3 (BaseJdbcLogger.java:143) - <==      Total: 0
+2021-04-02 16:23:34,333:INFO http-nio-9200-exec-3 (UserDetailsServiceImpl.java:45) - 【UserDetailsServiceImpl】:null
+2021-04-02 16:23:37,358:INFO http-nio-9200-exec-2 (JwtAuthenticationTokenFilter.java:54) - 【OncePerRequestFilter】：null
+2021-04-02 16:23:37,360:DEBUG http-nio-9200-exec-2 (BaseJdbcLogger.java:143) - ==>  Preparing: SELECT user_id,user_name,pass_word FROM userInfo WHERE user_name = ? 
+2021-04-02 16:23:37,361:DEBUG http-nio-9200-exec-2 (BaseJdbcLogger.java:143) - ==> Parameters: NONE_PROVIDED(String)
+2021-04-02 16:23:37,362:DEBUG http-nio-9200-exec-2 (BaseJdbcLogger.java:143) - <==      Total: 0
+2021-04-02 16:23:37,362:INFO http-nio-9200-exec-2 (UserDetailsServiceImpl.java:45) - 【UserDetailsServiceImpl】:null
+2021-04-02 16:26:20,064:INFO main (StartupInfoLogger.java:55) - Starting SpringSecurityApplication using Java 1.8.0_271 on DESKTOP-5LGK8HS with PID 7556 (D:\idea-work\SpringSecurity\target\classes started by Administrator in D:\idea-work\SpringSecurity)
+2021-04-02 16:26:20,069:INFO main (SpringApplication.java:662) - No active profile set, falling back to default profiles: default
+2021-04-02 16:26:20,444:INFO main (RepositoryConfigurationDelegate.java:250) - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-04-02 16:26:20,445:INFO main (RepositoryConfigurationDelegate.java:128) - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-04-02 16:26:20,459:INFO main (RepositoryConfigurationDelegate.java:188) - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2021-04-02 16:26:20,601:INFO main (PostProcessorRegistrationDelegate.java:376) - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@7b4acdc2' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-02 16:26:20,604:INFO main (PostProcessorRegistrationDelegate.java:376) - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-02 16:26:20,725:INFO main (TomcatWebServer.java:108) - Tomcat initialized with port(s): 9200 (http)
+2021-04-02 16:26:20,730:INFO main (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-9200"]
+2021-04-02 16:26:20,730:INFO main (DirectJDKLog.java:173) - Starting service [Tomcat]
+2021-04-02 16:26:20,730:INFO main (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-02 16:26:20,777:INFO main (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2021-04-02 16:26:20,777:INFO main (ServletWebServerApplicationContext.java:289) - Root WebApplicationContext: initialization completed in 683 ms
+2021-04-02 16:26:21,107:INFO main (DruidDataSource.java:930) - {dataSource-1} inited
+2021-04-02 16:26:21,378:INFO main (DefaultSecurityFilterChain.java:51) - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@62765aec, org.springframework.security.web.context.SecurityContextPersistenceFilter@68c9e023, org.springframework.security.web.header.HeaderWriterFilter@5489b1f7, org.springframework.security.web.authentication.logout.LogoutFilter@3b98b809, com.example.SpringSecurity.config.Security.filter.JwtAuthenticationTokenFilter@25673087, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1e7f19b4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@ab24484, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6f5bd362, org.springframework.security.web.session.SessionManagementFilter@252744a1, org.springframework.security.web.access.ExceptionTranslationFilter@49ca94a9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4dad0eed]
+2021-04-02 16:26:21,465:INFO main (ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-02 16:26:21,643:INFO main (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-9200"]
+2021-04-02 16:26:21,662:INFO main (TomcatWebServer.java:220) - Tomcat started on port(s): 9200 (http) with context path ''
+2021-04-02 16:26:21,669:INFO main (StartupInfoLogger.java:61) - Started SpringSecurityApplication in 1.915 seconds (JVM running for 2.384)
+2021-04-02 16:26:28,077:INFO http-nio-9200-exec-2 (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-02 16:26:28,077:INFO http-nio-9200-exec-2 (FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+2021-04-02 16:26:28,078:INFO http-nio-9200-exec-2 (FrameworkServlet.java:547) - Completed initialization in 1 ms
+2021-04-02 16:26:28,089:INFO http-nio-9200-exec-2 (JwtAuthenticationTokenFilter.java:54) - 【OncePerRequestFilter】：null
+2021-04-02 16:26:28,245:DEBUG http-nio-9200-exec-2 (BaseJdbcLogger.java:143) - ==>  Preparing: SELECT user_id,user_name,pass_word FROM userInfo WHERE user_name = ? 
+2021-04-02 16:26:28,258:DEBUG http-nio-9200-exec-2 (BaseJdbcLogger.java:143) - ==> Parameters: 123456(String)
+2021-04-02 16:26:28,269:DEBUG http-nio-9200-exec-2 (BaseJdbcLogger.java:143) - <==      Total: 0
+2021-04-02 16:26:28,270:INFO http-nio-9200-exec-2 (UserDetailsServiceImpl.java:45) - 【UserDetailsServiceImpl】:null
+2021-04-02 16:26:47,493:INFO main (StartupInfoLogger.java:55) - Starting SpringSecurityApplication using Java 1.8.0_271 on DESKTOP-5LGK8HS with PID 12048 (D:\idea-work\SpringSecurity\target\classes started by Administrator in D:\idea-work\SpringSecurity)
+2021-04-02 16:26:47,499:INFO main (SpringApplication.java:662) - No active profile set, falling back to default profiles: default
+2021-04-02 16:26:47,875:INFO main (RepositoryConfigurationDelegate.java:250) - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-04-02 16:26:47,877:INFO main (RepositoryConfigurationDelegate.java:128) - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-04-02 16:26:47,893:INFO main (RepositoryConfigurationDelegate.java:188) - Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2021-04-02 16:26:48,043:INFO main (PostProcessorRegistrationDelegate.java:376) - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@7b4acdc2' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-02 16:26:48,046:INFO main (PostProcessorRegistrationDelegate.java:376) - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-02 16:26:48,167:INFO main (TomcatWebServer.java:108) - Tomcat initialized with port(s): 9200 (http)
+2021-04-02 16:26:48,172:INFO main (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-9200"]
+2021-04-02 16:26:48,172:INFO main (DirectJDKLog.java:173) - Starting service [Tomcat]
+2021-04-02 16:26:48,173:INFO main (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-02 16:26:48,220:INFO main (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2021-04-02 16:26:48,220:INFO main (ServletWebServerApplicationContext.java:289) - Root WebApplicationContext: initialization completed in 697 ms
+2021-04-02 16:26:48,549:INFO main (DruidDataSource.java:930) - {dataSource-1} inited
+2021-04-02 16:26:48,813:INFO main (DefaultSecurityFilterChain.java:51) - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4640195a, org.springframework.security.web.context.SecurityContextPersistenceFilter@10e5bf9c, org.springframework.security.web.header.HeaderWriterFilter@49fb0bbd, org.springframework.security.web.authentication.logout.LogoutFilter@2e62ead7, com.example.SpringSecurity.config.Security.filter.JwtAuthenticationTokenFilter@8d8f754, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1624775, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6963b88c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@70d77826, org.springframework.security.web.session.SessionManagementFilter@77c3c037, org.springframework.security.web.access.ExceptionTranslationFilter@1526f71, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6f5bd362]
+2021-04-02 16:26:48,893:INFO main (ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-02 16:26:49,069:INFO main (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-9200"]
+2021-04-02 16:26:49,087:INFO main (TomcatWebServer.java:220) - Tomcat started on port(s): 9200 (http) with context path ''
+2021-04-02 16:26:49,093:INFO main (StartupInfoLogger.java:61) - Started SpringSecurityApplication in 1.9 seconds (JVM running for 2.376)
+2021-04-02 16:26:51,747:INFO http-nio-9200-exec-6 (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-02 16:26:51,747:INFO http-nio-9200-exec-6 (FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+2021-04-02 16:26:51,748:INFO http-nio-9200-exec-6 (FrameworkServlet.java:547) - Completed initialization in 1 ms
+2021-04-02 16:26:51,759:INFO http-nio-9200-exec-6 (JwtAuthenticationTokenFilter.java:54) - 【OncePerRequestFilter】：null
+2021-04-02 16:26:51,912:DEBUG http-nio-9200-exec-6 (BaseJdbcLogger.java:143) - ==>  Preparing: SELECT user_id,user_name,pass_word FROM userInfo WHERE user_name = ? 
+2021-04-02 16:26:51,925:DEBUG http-nio-9200-exec-6 (BaseJdbcLogger.java:143) - ==> Parameters: xhg(String)
+2021-04-02 16:26:51,937:DEBUG http-nio-9200-exec-6 (BaseJdbcLogger.java:143) - <==      Total: 1
+2021-04-02 16:26:51,937:INFO http-nio-9200-exec-6 (UserDetailsServiceImpl.java:45) - 【UserDetailsServiceImpl】:UserInfo{userId=2, userName='xhg', passWord='$2a$10$qx6EUoN3fTJ.4qn.ixhtv.t5RpNEIF4QeopWZKraznqCwnt2d1Ji.', loginTime=null, expireTime=null, token='null'}
+2021-04-02 16:26:54,337:ERROR http-nio-9200-exec-6 (GlobalException.java:31) - -----> Global-Exception： org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to localhost:6379
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.translateException(LettuceConnectionFactory.java:1553)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.getConnection(LettuceConnectionFactory.java:1461)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getNativeConnection(LettuceConnectionFactory.java:1247)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getConnection(LettuceConnectionFactory.java:1230)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getSharedConnection(LettuceConnectionFactory.java:979)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getConnection(LettuceConnectionFactory.java:359)
+	at org.springframework.data.redis.core.RedisConnectionUtils.fetchConnection(RedisConnectionUtils.java:193)
+	at org.springframework.data.redis.core.RedisConnectionUtils.doGetConnection(RedisConnectionUtils.java:144)
+	at org.springframework.data.redis.core.RedisConnectionUtils.getConnection(RedisConnectionUtils.java:105)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:209)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:189)
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:96)
+	at org.springframework.data.redis.core.DefaultValueOperations.set(DefaultValueOperations.java:256)
+	at com.example.SpringSecurity.config.Redis.RedisCache.setCacheObject(RedisCache.java:45)
+	at com.example.SpringSecurity.config.Security.service.SecurityTokenService.refreshToken(SecurityTokenService.java:137)
+	at com.example.SpringSecurity.config.Security.service.SecurityTokenService.createToken(SecurityTokenService.java:104)
+	at com.example.SpringSecurity.controller.loginController.LoginController(loginController.java:71)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:113)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:113)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at com.example.SpringSecurity.config.Security.filter.JwtAuthenticationTokenFilter.doFilterInternal(JwtAuthenticationTokenFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: io.lettuce.core.RedisConnectionException: Unable to connect to localhost:6379
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:78)
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:56)
+	at io.lettuce.core.AbstractRedisClient.getConnection(AbstractRedisClient.java:320)
+	at io.lettuce.core.RedisClient.connect(RedisClient.java:211)
+	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.lambda$getConnection$1(StandaloneConnectionProvider.java:115)
+	at java.util.Optional.orElseGet(Optional.java:267)
+	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.getConnection(StandaloneConnectionProvider.java:115)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.getConnection(LettuceConnectionFactory.java:1459)
+	... 106 more
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: localhost/127.0.0.1:6379
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:715)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:707)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+
+2021-04-02 16:32:04,243:INFO main (StartupInfoLogger.java:55) - Starting SpringSecurityApplication using Java 1.8.0_271 on DESKTOP-5LGK8HS with PID 1584 (D:\idea-work\SpringSecurity\target\classes started by Administrator in D:\idea-work\SpringSecurity)
+2021-04-02 16:32:04,248:INFO main (SpringApplication.java:662) - No active profile set, falling back to default profiles: default
+2021-04-02 16:32:04,684:INFO main (RepositoryConfigurationDelegate.java:250) - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-04-02 16:32:04,685:INFO main (RepositoryConfigurationDelegate.java:128) - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-04-02 16:32:04,701:INFO main (RepositoryConfigurationDelegate.java:188) - Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2021-04-02 16:32:04,851:INFO main (PostProcessorRegistrationDelegate.java:376) - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@77134e08' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-02 16:32:04,854:INFO main (PostProcessorRegistrationDelegate.java:376) - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-02 16:32:04,978:INFO main (TomcatWebServer.java:108) - Tomcat initialized with port(s): 9200 (http)
+2021-04-02 16:32:04,983:INFO main (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-9200"]
+2021-04-02 16:32:04,983:INFO main (DirectJDKLog.java:173) - Starting service [Tomcat]
+2021-04-02 16:32:04,983:INFO main (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-02 16:32:05,035:INFO main (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2021-04-02 16:32:05,035:INFO main (ServletWebServerApplicationContext.java:289) - Root WebApplicationContext: initialization completed in 740 ms
+2021-04-02 16:32:05,371:INFO main (DruidDataSource.java:930) - {dataSource-1} inited
+2021-04-02 16:32:05,637:INFO main (DefaultSecurityFilterChain.java:51) - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@66522ead, org.springframework.security.web.context.SecurityContextPersistenceFilter@2792b416, org.springframework.security.web.header.HeaderWriterFilter@1d0cac30, org.springframework.security.web.authentication.logout.LogoutFilter@2c829dbc, com.example.SpringSecurity.config.Security.filter.JwtAuthenticationTokenFilter@4b4eced1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@79d3473e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3a401749, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5a484ce1, org.springframework.security.web.session.SessionManagementFilter@2753316c, org.springframework.security.web.access.ExceptionTranslationFilter@3fc7c734, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@79eeff87]
+2021-04-02 16:32:05,716:INFO main (ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-02 16:32:05,902:INFO main (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-9200"]
+2021-04-02 16:32:05,912:INFO main (TomcatWebServer.java:220) - Tomcat started on port(s): 9200 (http) with context path ''
+2021-04-02 16:32:05,918:INFO main (StartupInfoLogger.java:61) - Started SpringSecurityApplication in 1.991 seconds (JVM running for 2.468)
+2021-04-02 16:32:19,149:INFO http-nio-9200-exec-1 (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-02 16:32:19,150:INFO http-nio-9200-exec-1 (FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+2021-04-02 16:32:19,150:INFO http-nio-9200-exec-1 (FrameworkServlet.java:547) - Completed initialization in 0 ms
+2021-04-02 16:32:19,162:INFO http-nio-9200-exec-1 (JwtAuthenticationTokenFilter.java:54) - 【OncePerRequestFilter】：null
+2021-04-02 16:32:19,315:DEBUG http-nio-9200-exec-1 (BaseJdbcLogger.java:143) - ==>  Preparing: SELECT user_id,user_name,pass_word FROM userInfo WHERE user_name = ? 
+2021-04-02 16:32:19,327:DEBUG http-nio-9200-exec-1 (BaseJdbcLogger.java:143) - ==> Parameters: xhg(String)
+2021-04-02 16:32:19,338:DEBUG http-nio-9200-exec-1 (BaseJdbcLogger.java:143) - <==      Total: 1
+2021-04-02 16:32:19,339:INFO http-nio-9200-exec-1 (UserDetailsServiceImpl.java:45) - 【UserDetailsServiceImpl】:UserInfo{userId=2, userName='xhg', passWord='$2a$10$qx6EUoN3fTJ.4qn.ixhtv.t5RpNEIF4QeopWZKraznqCwnt2d1Ji.', loginTime=null, expireTime=null, token='null'}
+2021-04-02 16:34:03,623:INFO http-nio-9200-exec-5 (JwtAuthenticationTokenFilter.java:54) - 【OncePerRequestFilter】：null
+2021-04-02 16:34:16,372:INFO http-nio-9200-exec-6 (JwtAuthenticationTokenFilter.java:54) - 【OncePerRequestFilter】：UserInfo{userId=2, userName='xhg', passWord='$2a$10$qx6EUoN3fTJ.4qn.ixhtv.t5RpNEIF4QeopWZKraznqCwnt2d1Ji.', loginTime=1617352339410, expireTime=1617354139410, token='1c4e7bcf-45c9-4c8c-bf95-74fddf50daa8'}
+2021-04-02 16:39:35,488:INFO http-nio-9200-exec-9 (JwtAuthenticationTokenFilter.java:54) - 【OncePerRequestFilter】：UserInfo{userId=2, userName='xhg', passWord='$2a$10$qx6EUoN3fTJ.4qn.ixhtv.t5RpNEIF4QeopWZKraznqCwnt2d1Ji.', loginTime=1617352339410, expireTime=1617354139410, token='1c4e7bcf-45c9-4c8c-bf95-74fddf50daa8'}
+2021-04-02 16:40:03,054:INFO http-nio-9200-exec-10 (JwtAuthenticationTokenFilter.java:54) - 【OncePerRequestFilter】：UserInfo{userId=2, userName='xhg', passWord='$2a$10$qx6EUoN3fTJ.4qn.ixhtv.t5RpNEIF4QeopWZKraznqCwnt2d1Ji.', loginTime=1617352339410, expireTime=1617354139410, token='1c4e7bcf-45c9-4c8c-bf95-74fddf50daa8'}
+2021-04-02 16:42:40,174:INFO main (StartupInfoLogger.java:55) - Starting SpringSecurityApplication using Java 1.8.0_271 on DESKTOP-5LGK8HS with PID 11236 (D:\idea-work\SpringSecurity\target\classes started by Administrator in D:\idea-work\SpringSecurity)
+2021-04-02 16:42:40,180:INFO main (SpringApplication.java:662) - No active profile set, falling back to default profiles: default
+2021-04-02 16:42:40,572:INFO main (RepositoryConfigurationDelegate.java:250) - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-04-02 16:42:40,573:INFO main (RepositoryConfigurationDelegate.java:128) - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-04-02 16:42:40,588:INFO main (RepositoryConfigurationDelegate.java:188) - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2021-04-02 16:42:40,730:INFO main (PostProcessorRegistrationDelegate.java:376) - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@342726f1' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-02 16:42:40,733:INFO main (PostProcessorRegistrationDelegate.java:376) - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-02 16:42:40,854:INFO main (TomcatWebServer.java:108) - Tomcat initialized with port(s): 9200 (http)
+2021-04-02 16:42:40,859:INFO main (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-9200"]
+2021-04-02 16:42:40,859:INFO main (DirectJDKLog.java:173) - Starting service [Tomcat]
+2021-04-02 16:42:40,859:INFO main (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-02 16:42:40,904:INFO main (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2021-04-02 16:42:40,905:INFO main (ServletWebServerApplicationContext.java:289) - Root WebApplicationContext: initialization completed in 699 ms
+2021-04-02 16:42:41,242:INFO main (DruidDataSource.java:930) - {dataSource-1} inited
+2021-04-02 16:42:41,509:INFO main (DefaultSecurityFilterChain.java:51) - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@58ae402b, org.springframework.security.web.context.SecurityContextPersistenceFilter@7fad214a, org.springframework.security.web.header.HeaderWriterFilter@202ae86f, org.springframework.security.web.authentication.logout.LogoutFilter@4e3e11b9, com.example.SpringSecurity.config.Security.filter.JwtAuthenticationTokenFilter@63d4f0a2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@75cf0de5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2cd388f5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4099209b, org.springframework.security.web.session.SessionManagementFilter@79d3473e, org.springframework.security.web.access.ExceptionTranslationFilter@1d0cac30, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1378eea2]
+2021-04-02 16:42:41,588:INFO main (ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-02 16:42:41,772:INFO main (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-9200"]
+2021-04-02 16:42:41,792:INFO main (TomcatWebServer.java:220) - Tomcat started on port(s): 9200 (http) with context path ''
+2021-04-02 16:42:41,798:INFO main (StartupInfoLogger.java:61) - Started SpringSecurityApplication in 1.949 seconds (JVM running for 2.42)
+2021-04-02 16:42:55,526:INFO http-nio-9200-exec-2 (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-02 16:42:55,527:INFO http-nio-9200-exec-2 (FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+2021-04-02 16:42:55,527:INFO http-nio-9200-exec-2 (FrameworkServlet.java:547) - Completed initialization in 0 ms
+2021-04-02 16:42:55,938:INFO http-nio-9200-exec-2 (JwtAuthenticationTokenFilter.java:54) - 【OncePerRequestFilter】：UserInfo{userId=2, userName='xhg', passWord='$2a$10$qx6EUoN3fTJ.4qn.ixhtv.t5RpNEIF4QeopWZKraznqCwnt2d1Ji.', loginTime=1617352975915, expireTime=1617354775915, token='1c4e7bcf-45c9-4c8c-bf95-74fddf50daa8'}
+2021-04-02 16:46:58,854:INFO http-nio-9200-exec-5 (JwtAuthenticationTokenFilter.java:54) - 【OncePerRequestFilter】：null
+2021-04-02 16:46:58,985:DEBUG http-nio-9200-exec-5 (BaseJdbcLogger.java:143) - ==>  Preparing: SELECT user_id,user_name,pass_word FROM userInfo WHERE user_name = ? 
+2021-04-02 16:46:58,998:DEBUG http-nio-9200-exec-5 (BaseJdbcLogger.java:143) - ==> Parameters: xhg(String)
+2021-04-02 16:46:59,010:DEBUG http-nio-9200-exec-5 (BaseJdbcLogger.java:143) - <==      Total: 1
+2021-04-02 16:46:59,011:INFO http-nio-9200-exec-5 (UserDetailsServiceImpl.java:45) - 【UserDetailsServiceImpl】:UserInfo{userId=2, userName='xhg', passWord='$2a$10$qx6EUoN3fTJ.4qn.ixhtv.t5RpNEIF4QeopWZKraznqCwnt2d1Ji.', loginTime=null, expireTime=null, token='null'}
+2021-04-02 16:52:42,817:INFO main (StartupInfoLogger.java:55) - Starting SpringSecurityApplication using Java 1.8.0_271 on DESKTOP-5LGK8HS with PID 9704 (D:\idea-work\SpringSecurity\target\classes started by Administrator in D:\idea-work\SpringSecurity)
+2021-04-02 16:52:42,822:INFO main (SpringApplication.java:662) - No active profile set, falling back to default profiles: default
+2021-04-02 16:52:43,209:INFO main (RepositoryConfigurationDelegate.java:250) - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-04-02 16:52:43,210:INFO main (RepositoryConfigurationDelegate.java:128) - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-04-02 16:52:43,227:INFO main (RepositoryConfigurationDelegate.java:188) - Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2021-04-02 16:52:43,378:INFO main (PostProcessorRegistrationDelegate.java:376) - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@20749d9' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-02 16:52:43,381:INFO main (PostProcessorRegistrationDelegate.java:376) - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-02 16:52:43,506:INFO main (TomcatWebServer.java:108) - Tomcat initialized with port(s): 9200 (http)
+2021-04-02 16:52:43,512:INFO main (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-9200"]
+2021-04-02 16:52:43,512:INFO main (DirectJDKLog.java:173) - Starting service [Tomcat]
+2021-04-02 16:52:43,513:INFO main (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-02 16:52:43,570:INFO main (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2021-04-02 16:52:43,571:INFO main (ServletWebServerApplicationContext.java:289) - Root WebApplicationContext: initialization completed in 724 ms
+2021-04-02 16:52:43,912:INFO main (DruidDataSource.java:930) - {dataSource-1} inited
+2021-04-02 16:52:44,192:INFO main (DefaultSecurityFilterChain.java:51) - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1de0641b, org.springframework.security.web.context.SecurityContextPersistenceFilter@6f5bd362, org.springframework.security.web.header.HeaderWriterFilter@2753316c, org.springframework.security.web.authentication.logout.LogoutFilter@47148f3f, com.example.SpringSecurity.config.Security.filter.JwtAuthenticationTokenFilter@216e9ca3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7793ad58, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4207852d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@68b734a8, org.springframework.security.web.session.SessionManagementFilter@468173fa, org.springframework.security.web.access.ExceptionTranslationFilter@35c4697c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@58ae402b]
+2021-04-02 16:52:44,271:INFO main (ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-02 16:52:44,454:INFO main (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-9200"]
+2021-04-02 16:52:44,464:INFO main (TomcatWebServer.java:220) - Tomcat started on port(s): 9200 (http) with context path ''
+2021-04-02 16:52:44,470:INFO main (StartupInfoLogger.java:61) - Started SpringSecurityApplication in 1.972 seconds (JVM running for 2.455)
+2021-04-02 16:52:49,603:INFO http-nio-9200-exec-1 (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-02 16:52:49,603:INFO http-nio-9200-exec-1 (FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+2021-04-02 16:52:49,604:INFO http-nio-9200-exec-1 (FrameworkServlet.java:547) - Completed initialization in 1 ms
+2021-04-02 16:52:49,615:INFO http-nio-9200-exec-1 (JwtAuthenticationTokenFilter.java:54) - 【OncePerRequestFilter】：null
+2021-04-02 16:52:49,767:DEBUG http-nio-9200-exec-1 (BaseJdbcLogger.java:143) - ==>  Preparing: SELECT user_id,user_name,pass_word FROM userInfo WHERE user_name = ? 
+2021-04-02 16:52:49,779:DEBUG http-nio-9200-exec-1 (BaseJdbcLogger.java:143) - ==> Parameters: xhg(String)
+2021-04-02 16:52:49,790:DEBUG http-nio-9200-exec-1 (BaseJdbcLogger.java:143) - <==      Total: 1
+2021-04-02 16:52:49,791:INFO http-nio-9200-exec-1 (UserDetailsServiceImpl.java:45) - 【UserDetailsServiceImpl】:UserInfo{userId=2, userName='xhg', passWord='$2a$10$qx6EUoN3fTJ.4qn.ixhtv.t5RpNEIF4QeopWZKraznqCwnt2d1Ji.', loginTime=null, expireTime=null, token='null'}
+2021-04-02 16:53:13,740:INFO main (StartupInfoLogger.java:55) - Starting SpringSecurityApplication using Java 1.8.0_271 on DESKTOP-5LGK8HS with PID 5232 (D:\idea-work\SpringSecurity\target\classes started by Administrator in D:\idea-work\SpringSecurity)
+2021-04-02 16:53:13,746:INFO main (SpringApplication.java:662) - No active profile set, falling back to default profiles: default
+2021-04-02 16:53:14,126:INFO main (RepositoryConfigurationDelegate.java:250) - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-04-02 16:53:14,127:INFO main (RepositoryConfigurationDelegate.java:128) - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-04-02 16:53:14,142:INFO main (RepositoryConfigurationDelegate.java:188) - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2021-04-02 16:53:14,284:INFO main (PostProcessorRegistrationDelegate.java:376) - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@5445f5ba' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-02 16:53:14,287:INFO main (PostProcessorRegistrationDelegate.java:376) - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-02 16:53:14,408:INFO main (TomcatWebServer.java:108) - Tomcat initialized with port(s): 9200 (http)
+2021-04-02 16:53:14,413:INFO main (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-9200"]
+2021-04-02 16:53:14,413:INFO main (DirectJDKLog.java:173) - Starting service [Tomcat]
+2021-04-02 16:53:14,414:INFO main (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-02 16:53:14,461:INFO main (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2021-04-02 16:53:14,462:INFO main (ServletWebServerApplicationContext.java:289) - Root WebApplicationContext: initialization completed in 692 ms
+2021-04-02 16:53:14,823:INFO main (DruidDataSource.java:930) - {dataSource-1} inited
+2021-04-02 16:53:15,088:INFO main (DefaultSecurityFilterChain.java:51) - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@58ae402b, org.springframework.security.web.context.SecurityContextPersistenceFilter@7fad214a, org.springframework.security.web.header.HeaderWriterFilter@202ae86f, org.springframework.security.web.authentication.logout.LogoutFilter@4e3e11b9, com.example.SpringSecurity.config.Security.filter.JwtAuthenticationTokenFilter@63d4f0a2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@75cf0de5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2cd388f5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4099209b, org.springframework.security.web.session.SessionManagementFilter@79d3473e, org.springframework.security.web.access.ExceptionTranslationFilter@1d0cac30, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1378eea2]
+2021-04-02 16:53:15,168:INFO main (ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-02 16:53:15,343:INFO main (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-9200"]
+2021-04-02 16:53:15,361:INFO main (TomcatWebServer.java:220) - Tomcat started on port(s): 9200 (http) with context path ''
+2021-04-02 16:53:15,367:INFO main (StartupInfoLogger.java:61) - Started SpringSecurityApplication in 1.93 seconds (JVM running for 2.412)
+2021-04-02 16:53:18,644:INFO http-nio-9200-exec-1 (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-02 16:53:18,644:INFO http-nio-9200-exec-1 (FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+2021-04-02 16:53:18,644:INFO http-nio-9200-exec-1 (FrameworkServlet.java:547) - Completed initialization in 0 ms
+2021-04-02 16:53:18,656:INFO http-nio-9200-exec-1 (JwtAuthenticationTokenFilter.java:54) - 【OncePerRequestFilter】：null
+2021-04-02 16:53:18,809:DEBUG http-nio-9200-exec-1 (BaseJdbcLogger.java:143) - ==>  Preparing: SELECT user_id,user_name,pass_word FROM userInfo WHERE user_name = ? 
+2021-04-02 16:53:18,822:DEBUG http-nio-9200-exec-1 (BaseJdbcLogger.java:143) - ==> Parameters: xhg(String)
+2021-04-02 16:53:18,833:DEBUG http-nio-9200-exec-1 (BaseJdbcLogger.java:143) - <==      Total: 1
+2021-04-02 16:53:18,834:INFO http-nio-9200-exec-1 (UserDetailsServiceImpl.java:45) - 【UserDetailsServiceImpl】:UserInfo{userId=2, userName='xhg', passWord='$2a$10$qx6EUoN3fTJ.4qn.ixhtv.t5RpNEIF4QeopWZKraznqCwnt2d1Ji.', loginTime=null, expireTime=null, token='null'}
+2021-04-02 16:53:18,907:ERROR http-nio-9200-exec-1 (GlobalException.java:41) - -----> Global-Exception： 账号/密码错误
+2021-04-08 10:46:17,546:INFO main (StartupInfoLogger.java:55) - Starting SpringSecurityApplicationTests using Java 1.8.0_271 on DESKTOP-5LGK8HS with PID 12784 (started by Administrator in D:\idea-work\SpringSecurity)
+2021-04-08 10:46:17,576:INFO main (SpringApplication.java:662) - No active profile set, falling back to default profiles: default
+2021-04-08 10:46:18,639:INFO main (RepositoryConfigurationDelegate.java:250) - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-04-08 10:46:18,655:INFO main (RepositoryConfigurationDelegate.java:128) - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-04-08 10:46:18,677:INFO main (RepositoryConfigurationDelegate.java:188) - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2021-04-08 10:46:19,176:INFO main (PostProcessorRegistrationDelegate.java:376) - Bean 'redisConfig' of type [com.example.SpringSecurity.config.Redis.redisConfig$$EnhancerBySpringCGLIB$$70e5db2a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-08 10:46:19,455:INFO main (PostProcessorRegistrationDelegate.java:376) - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@6b63e6ad' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-08 10:46:19,466:INFO main (PostProcessorRegistrationDelegate.java:376) - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-08 10:46:20,407:INFO main (DruidDataSource.java:930) - {dataSource-1} inited
+2021-04-08 10:46:21,082:INFO main (DefaultSecurityFilterChain.java:51) - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@c9b5a99, org.springframework.security.web.context.SecurityContextPersistenceFilter@7bd38fed, org.springframework.security.web.header.HeaderWriterFilter@37e7c4cc, org.springframework.security.web.authentication.logout.LogoutFilter@404ced67, com.example.SpringSecurity.config.Security.filter.JwtAuthenticationTokenFilter@70be89ec, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@42a0786f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@46bb0bdf, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2aee0704, org.springframework.security.web.session.SessionManagementFilter@1c6a0103, org.springframework.security.web.access.ExceptionTranslationFilter@37775bb1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@578c3fd9]
+2021-04-08 10:46:21,444:INFO main (ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-08 10:46:21,899:INFO main (StartupInfoLogger.java:61) - Started SpringSecurityApplicationTests in 4.98 seconds (JVM running for 6.326)
+2021-04-08 10:46:22,292:INFO SpringContextShutdownHook (ExecutorConfigurationSupport.java:218) - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-08 10:46:22,306:INFO SpringContextShutdownHook (DruidDataSource.java:1825) - {dataSource-1} closed
+2021-04-08 10:47:25,637:INFO main (StartupInfoLogger.java:55) - Starting SpringSecurityApplicationTests using Java 1.8.0_271 on DESKTOP-5LGK8HS with PID 14272 (started by Administrator in D:\idea-work\SpringSecurity)
+2021-04-08 10:47:25,644:INFO main (SpringApplication.java:662) - No active profile set, falling back to default profiles: default
+2021-04-08 10:47:26,106:INFO main (RepositoryConfigurationDelegate.java:250) - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-04-08 10:47:26,109:INFO main (RepositoryConfigurationDelegate.java:128) - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-04-08 10:47:26,130:INFO main (RepositoryConfigurationDelegate.java:188) - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2021-04-08 10:47:26,382:INFO main (PostProcessorRegistrationDelegate.java:376) - Bean 'redisConfig' of type [com.example.SpringSecurity.config.Redis.redisConfig$$EnhancerBySpringCGLIB$$632b4b9e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-08 10:47:26,514:INFO main (PostProcessorRegistrationDelegate.java:376) - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@1db7157f' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-08 10:47:26,526:INFO main (PostProcessorRegistrationDelegate.java:376) - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-08 10:47:27,060:INFO main (DruidDataSource.java:930) - {dataSource-1} inited
+2021-04-08 10:47:27,576:INFO main (DefaultSecurityFilterChain.java:51) - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@11c581a0, org.springframework.security.web.context.SecurityContextPersistenceFilter@477523ba, org.springframework.security.web.header.HeaderWriterFilter@1e2445f6, org.springframework.security.web.authentication.logout.LogoutFilter@624b3544, com.example.SpringSecurity.config.Security.filter.JwtAuthenticationTokenFilter@256589a1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@78c74647, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7ceb6c45, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@935493d, org.springframework.security.web.session.SessionManagementFilter@7bd38fed, org.springframework.security.web.access.ExceptionTranslationFilter@37e7c4cc, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@241b971f]
+2021-04-08 10:47:27,865:INFO main (ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-08 10:47:28,216:INFO main (StartupInfoLogger.java:61) - Started SpringSecurityApplicationTests in 2.937 seconds (JVM running for 3.788)
+2021-04-08 10:47:28,486:INFO SpringContextShutdownHook (ExecutorConfigurationSupport.java:218) - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-08 10:47:28,492:INFO SpringContextShutdownHook (DruidDataSource.java:1825) - {dataSource-1} closed
+2021-04-14 10:55:41,141:INFO main (StartupInfoLogger.java:55) - Starting SpringSecurityApplication using Java 1.8.0_271 on DESKTOP-5LGK8HS with PID 2956 (D:\idea-work\SpringSecurity\target\classes started by Administrator in D:\idea-work\SpringSecurity)
+2021-04-14 10:55:41,161:INFO main (SpringApplication.java:662) - No active profile set, falling back to default profiles: default
+2021-04-14 10:55:41,643:INFO main (RepositoryConfigurationDelegate.java:250) - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-04-14 10:55:41,644:INFO main (RepositoryConfigurationDelegate.java:128) - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-04-14 10:55:41,660:INFO main (RepositoryConfigurationDelegate.java:188) - Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2021-04-14 10:55:41,805:INFO main (PostProcessorRegistrationDelegate.java:376) - Bean 'redisConfig' of type [com.example.SpringSecurity.config.Redis.redisConfig$$EnhancerBySpringCGLIB$$a4172273] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-14 10:55:41,832:INFO main (PostProcessorRegistrationDelegate.java:376) - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@45667d98' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-14 10:55:41,836:INFO main (PostProcessorRegistrationDelegate.java:376) - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-14 10:55:41,973:INFO main (TomcatWebServer.java:108) - Tomcat initialized with port(s): 9200 (http)
+2021-04-14 10:55:41,978:INFO main (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-9200"]
+2021-04-14 10:55:41,978:INFO main (DirectJDKLog.java:173) - Starting service [Tomcat]
+2021-04-14 10:55:41,979:INFO main (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-14 10:55:42,038:INFO main (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2021-04-14 10:55:42,038:INFO main (ServletWebServerApplicationContext.java:289) - Root WebApplicationContext: initialization completed in 833 ms
+2021-04-14 10:55:42,410:INFO main (DruidDataSource.java:930) - {dataSource-1} inited
+2021-04-14 10:55:42,753:INFO main (DefaultSecurityFilterChain.java:51) - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5eb5da12, org.springframework.security.web.context.SecurityContextPersistenceFilter@47272cd3, org.springframework.security.web.header.HeaderWriterFilter@d7bbf12, org.springframework.security.web.authentication.logout.LogoutFilter@3becc950, com.example.SpringSecurity.config.Security.filter.JwtAuthenticationTokenFilter@4afbb6c2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@32f1fafe, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@66bf40e5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4a50d04a, org.springframework.security.web.session.SessionManagementFilter@180b3819, org.springframework.security.web.access.ExceptionTranslationFilter@5d152bcd, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@574059d5]
+2021-04-14 10:55:42,859:INFO main (ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-14 10:55:43,074:INFO main (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-9200"]
+2021-04-14 10:55:43,085:INFO main (TomcatWebServer.java:220) - Tomcat started on port(s): 9200 (http) with context path ''
+2021-04-14 10:55:43,092:INFO main (StartupInfoLogger.java:61) - Started SpringSecurityApplication in 2.28 seconds (JVM running for 2.792)
+2021-04-14 10:56:09,381:INFO http-nio-9200-exec-1 (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-14 10:56:09,381:INFO http-nio-9200-exec-1 (FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+2021-04-14 10:56:09,382:INFO http-nio-9200-exec-1 (FrameworkServlet.java:547) - Completed initialization in 1 ms
+2021-04-14 10:56:09,393:INFO http-nio-9200-exec-1 (JwtAuthenticationTokenFilter.java:54) - 【OncePerRequestFilter】：null
+2021-04-14 10:56:09,550:DEBUG http-nio-9200-exec-1 (BaseJdbcLogger.java:143) - ==>  Preparing: SELECT user_id,user_name,pass_word FROM userInfo WHERE user_name = ? 
+2021-04-14 10:56:09,563:DEBUG http-nio-9200-exec-1 (BaseJdbcLogger.java:143) - ==> Parameters: xhg(String)
+2021-04-14 10:56:09,594:DEBUG http-nio-9200-exec-1 (BaseJdbcLogger.java:143) - <==      Total: 1
+2021-04-14 10:56:09,595:INFO http-nio-9200-exec-1 (UserDetailsServiceImpl.java:45) - 【UserDetailsServiceImpl】:UserInfo{userId=2, userName='xhg', passWord='$2a$10$qx6EUoN3fTJ.4qn.ixhtv.t5RpNEIF4QeopWZKraznqCwnt2d1Ji.', loginTime=null, expireTime=null, token='null'}
+2021-04-14 10:56:09,664:ERROR http-nio-9200-exec-1 (GlobalException.java:41) - -----> Global-BaseException： 账号/密码错误
+2021-04-14 10:56:15,870:INFO http-nio-9200-exec-3 (JwtAuthenticationTokenFilter.java:54) - 【OncePerRequestFilter】：null
+2021-04-14 10:56:15,871:DEBUG http-nio-9200-exec-3 (BaseJdbcLogger.java:143) - ==>  Preparing: SELECT user_id,user_name,pass_word FROM userInfo WHERE user_name = ? 
+2021-04-14 10:56:15,872:DEBUG http-nio-9200-exec-3 (BaseJdbcLogger.java:143) - ==> Parameters: xhg(String)
+2021-04-14 10:56:15,873:DEBUG http-nio-9200-exec-3 (BaseJdbcLogger.java:143) - <==      Total: 1
+2021-04-14 10:56:15,873:INFO http-nio-9200-exec-3 (UserDetailsServiceImpl.java:45) - 【UserDetailsServiceImpl】:UserInfo{userId=2, userName='xhg', passWord='$2a$10$qx6EUoN3fTJ.4qn.ixhtv.t5RpNEIF4QeopWZKraznqCwnt2d1Ji.', loginTime=null, expireTime=null, token='null'}
+2021-04-14 10:56:15,943:ERROR http-nio-9200-exec-3 (GlobalException.java:41) - -----> Global-BaseException： 账号/密码错误
+2021-04-14 10:56:28,268:INFO http-nio-9200-exec-4 (JwtAuthenticationTokenFilter.java:54) - 【OncePerRequestFilter】：null
+2021-04-14 10:56:53,406:INFO http-nio-9200-exec-5 (JwtAuthenticationTokenFilter.java:54) - 【OncePerRequestFilter】：null
+2021-04-14 10:56:53,408:ERROR http-nio-9200-exec-5 (GlobalException.java:31) - -----> Global-Exception： org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.example.SpringSecurity.vo.JsonResult com.example.SpringSecurity.controller.loginController.LoginController(com.example.SpringSecurity.pojo.UserInfo)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:161)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:131)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:121)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:170)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:113)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:113)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at com.example.SpringSecurity.config.Security.filter.JwtAuthenticationTokenFilter.doFilterInternal(JwtAuthenticationTokenFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2021-04-14 10:59:06,390:INFO http-nio-9200-exec-8 (JwtAuthenticationTokenFilter.java:54) - 【OncePerRequestFilter】：null
+2021-04-14 10:59:06,396:DEBUG http-nio-9200-exec-8 (BaseJdbcLogger.java:143) - ==>  Preparing: SELECT user_id,user_name,pass_word FROM userInfo WHERE user_name = ? 
+2021-04-14 10:59:06,396:DEBUG http-nio-9200-exec-8 (BaseJdbcLogger.java:143) - ==> Parameters: xhg(String)
+2021-04-14 10:59:06,397:DEBUG http-nio-9200-exec-8 (BaseJdbcLogger.java:143) - <==      Total: 1
+2021-04-14 10:59:06,397:INFO http-nio-9200-exec-8 (UserDetailsServiceImpl.java:45) - 【UserDetailsServiceImpl】:UserInfo{userId=2, userName='xhg', passWord='$2a$10$qx6EUoN3fTJ.4qn.ixhtv.t5RpNEIF4QeopWZKraznqCwnt2d1Ji.', loginTime=null, expireTime=null, token='null'}
+2021-04-14 10:59:06,467:ERROR http-nio-9200-exec-8 (GlobalException.java:41) - -----> Global-BaseException： 账号/密码错误
+2021-04-14 10:59:25,593:INFO http-nio-9200-exec-9 (JwtAuthenticationTokenFilter.java:54) - 【OncePerRequestFilter】：null
+2021-04-14 10:59:25,595:DEBUG http-nio-9200-exec-9 (BaseJdbcLogger.java:143) - ==>  Preparing: SELECT user_id,user_name,pass_word FROM userInfo WHERE user_name = ? 
+2021-04-14 10:59:25,597:DEBUG http-nio-9200-exec-9 (BaseJdbcLogger.java:143) - ==> Parameters: xhg(String)
+2021-04-14 10:59:25,597:DEBUG http-nio-9200-exec-9 (BaseJdbcLogger.java:143) - <==      Total: 1
+2021-04-14 10:59:25,597:INFO http-nio-9200-exec-9 (UserDetailsServiceImpl.java:45) - 【UserDetailsServiceImpl】:UserInfo{userId=2, userName='xhg', passWord='$2a$10$qx6EUoN3fTJ.4qn.ixhtv.t5RpNEIF4QeopWZKraznqCwnt2d1Ji.', loginTime=null, expireTime=null, token='null'}
+2021-04-14 10:59:25,666:ERROR http-nio-9200-exec-9 (GlobalException.java:41) - -----> Global-BaseException： 账号/密码错误
+2021-04-14 10:59:33,403:INFO http-nio-9200-exec-10 (JwtAuthenticationTokenFilter.java:54) - 【OncePerRequestFilter】：null
+2021-04-14 10:59:33,405:DEBUG http-nio-9200-exec-10 (BaseJdbcLogger.java:143) - ==>  Preparing: SELECT user_id,user_name,pass_word FROM userInfo WHERE user_name = ? 
+2021-04-14 10:59:33,405:DEBUG http-nio-9200-exec-10 (BaseJdbcLogger.java:143) - ==> Parameters: xhg(String)
+2021-04-14 10:59:33,406:DEBUG http-nio-9200-exec-10 (BaseJdbcLogger.java:143) - <==      Total: 1
+2021-04-14 10:59:33,406:INFO http-nio-9200-exec-10 (UserDetailsServiceImpl.java:45) - 【UserDetailsServiceImpl】:UserInfo{userId=2, userName='xhg', passWord='$2a$10$qx6EUoN3fTJ.4qn.ixhtv.t5RpNEIF4QeopWZKraznqCwnt2d1Ji.', loginTime=null, expireTime=null, token='null'}
+2021-04-14 10:59:33,480:ERROR http-nio-9200-exec-10 (GlobalException.java:41) - -----> Global-BaseException： 账号/密码错误
+2021-04-14 11:00:23,691:INFO http-nio-9200-exec-2 (JwtAuthenticationTokenFilter.java:54) - 【OncePerRequestFilter】：null
+2021-04-14 11:00:23,693:DEBUG http-nio-9200-exec-2 (BaseJdbcLogger.java:143) - ==>  Preparing: SELECT user_id,user_name,pass_word FROM userInfo WHERE user_name = ? 
+2021-04-14 11:00:23,694:DEBUG http-nio-9200-exec-2 (BaseJdbcLogger.java:143) - ==> Parameters: xhg(String)
+2021-04-14 11:00:23,695:DEBUG http-nio-9200-exec-2 (BaseJdbcLogger.java:143) - <==      Total: 1
+2021-04-14 11:00:23,695:INFO http-nio-9200-exec-2 (UserDetailsServiceImpl.java:45) - 【UserDetailsServiceImpl】:UserInfo{userId=2, userName='xhg', passWord='$2a$10$qx6EUoN3fTJ.4qn.ixhtv.t5RpNEIF4QeopWZKraznqCwnt2d1Ji.', loginTime=null, expireTime=null, token='null'}
+2021-04-19 09:41:09,089:INFO main (StartupInfoLogger.java:55) - Starting SpringSecurityApplicationTests using Java 1.8.0_271 on DESKTOP-5LGK8HS with PID 6528 (started by Administrator in D:\idea-work\SpringSecurity)
+2021-04-19 09:41:09,120:INFO main (SpringApplication.java:662) - No active profile set, falling back to default profiles: default
+2021-04-19 09:41:10,562:INFO main (RepositoryConfigurationDelegate.java:250) - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-04-19 09:41:10,577:INFO main (RepositoryConfigurationDelegate.java:128) - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-04-19 09:41:10,609:INFO main (RepositoryConfigurationDelegate.java:188) - Finished Spring Data repository scanning in 24 ms. Found 0 Redis repository interfaces.
+2021-04-19 09:41:11,176:INFO main (PostProcessorRegistrationDelegate.java:376) - Bean 'redisConfig' of type [com.example.SpringSecurity.config.Redis.redisConfig$$EnhancerBySpringCGLIB$$f87e49a0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-19 09:41:11,374:INFO main (PostProcessorRegistrationDelegate.java:376) - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@18137eab' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-19 09:41:11,389:INFO main (PostProcessorRegistrationDelegate.java:376) - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-19 09:41:12,255:INFO main (DruidDataSource.java:930) - {dataSource-1} inited
+2021-04-19 09:41:12,960:INFO main (DefaultSecurityFilterChain.java:51) - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@c9b5a99, org.springframework.security.web.context.SecurityContextPersistenceFilter@7bd38fed, org.springframework.security.web.header.HeaderWriterFilter@37e7c4cc, org.springframework.security.web.authentication.logout.LogoutFilter@404ced67, com.example.SpringSecurity.config.Security.filter.JwtAuthenticationTokenFilter@70be89ec, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@42a0786f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@46bb0bdf, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2aee0704, org.springframework.security.web.session.SessionManagementFilter@1c6a0103, org.springframework.security.web.access.ExceptionTranslationFilter@37775bb1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@578c3fd9]
+2021-04-19 09:41:13,314:INFO main (ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-19 09:41:13,734:INFO main (StartupInfoLogger.java:61) - Started SpringSecurityApplicationTests in 5.306 seconds (JVM running for 7.053)
+2021-04-19 09:41:15,123:INFO SpringContextShutdownHook (ExecutorConfigurationSupport.java:218) - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-19 09:41:15,123:INFO SpringContextShutdownHook (DruidDataSource.java:1825) - {dataSource-1} closed
+2021-04-19 09:42:17,207:INFO main (StartupInfoLogger.java:55) - Starting SpringSecurityApplicationTests using Java 1.8.0_271 on DESKTOP-5LGK8HS with PID 2316 (started by Administrator in D:\idea-work\SpringSecurity)
+2021-04-19 09:42:17,222:INFO main (SpringApplication.java:662) - No active profile set, falling back to default profiles: default
+2021-04-19 09:42:17,706:INFO main (RepositoryConfigurationDelegate.java:250) - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-04-19 09:42:17,706:INFO main (RepositoryConfigurationDelegate.java:128) - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-04-19 09:42:17,722:INFO main (RepositoryConfigurationDelegate.java:188) - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2021-04-19 09:42:17,972:INFO main (PostProcessorRegistrationDelegate.java:376) - Bean 'redisConfig' of type [com.example.SpringSecurity.config.Redis.redisConfig$$EnhancerBySpringCGLIB$$8223ef6b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-19 09:42:18,097:INFO main (PostProcessorRegistrationDelegate.java:376) - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@60d6fdd4' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-19 09:42:18,097:INFO main (PostProcessorRegistrationDelegate.java:376) - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-19 09:42:18,612:INFO main (DruidDataSource.java:930) - {dataSource-1} inited
+2021-04-19 09:42:19,167:INFO main (DefaultSecurityFilterChain.java:51) - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@24d8f87a, org.springframework.security.web.context.SecurityContextPersistenceFilter@7741ae1b, org.springframework.security.web.header.HeaderWriterFilter@7d133fb7, org.springframework.security.web.authentication.logout.LogoutFilter@1c6a0103, com.example.SpringSecurity.config.Security.filter.JwtAuthenticationTokenFilter@3f048c86, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@545d2560, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@16681017, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@255d9277, org.springframework.security.web.session.SessionManagementFilter@5c448ef, org.springframework.security.web.access.ExceptionTranslationFilter@2aea717c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6238d5e0]
+2021-04-19 09:42:19,449:INFO main (ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-19 09:42:19,788:INFO main (StartupInfoLogger.java:61) - Started SpringSecurityApplicationTests in 2.939 seconds (JVM running for 3.816)
+2021-04-19 09:42:21,036:INFO SpringContextShutdownHook (ExecutorConfigurationSupport.java:218) - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-19 09:42:21,036:INFO SpringContextShutdownHook (DruidDataSource.java:1825) - {dataSource-1} closed
+2021-04-19 09:42:50,849:INFO main (StartupInfoLogger.java:55) - Starting SpringSecurityApplicationTests using Java 1.8.0_271 on DESKTOP-5LGK8HS with PID 12136 (started by Administrator in D:\idea-work\SpringSecurity)
+2021-04-19 09:42:50,849:INFO main (SpringApplication.java:662) - No active profile set, falling back to default profiles: default
+2021-04-19 09:42:51,309:INFO main (RepositoryConfigurationDelegate.java:250) - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-04-19 09:42:51,309:INFO main (RepositoryConfigurationDelegate.java:128) - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-04-19 09:42:51,339:INFO main (RepositoryConfigurationDelegate.java:188) - Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+2021-04-19 09:42:51,620:INFO main (PostProcessorRegistrationDelegate.java:376) - Bean 'redisConfig' of type [com.example.SpringSecurity.config.Redis.redisConfig$$EnhancerBySpringCGLIB$$4ee562a3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-19 09:42:51,731:INFO main (PostProcessorRegistrationDelegate.java:376) - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@2152ab30' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-19 09:42:51,747:INFO main (PostProcessorRegistrationDelegate.java:376) - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-19 09:42:52,266:INFO main (DruidDataSource.java:930) - {dataSource-1} inited
+2021-04-19 09:42:52,781:INFO main (DefaultSecurityFilterChain.java:51) - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@24d8f87a, org.springframework.security.web.context.SecurityContextPersistenceFilter@7741ae1b, org.springframework.security.web.header.HeaderWriterFilter@7d133fb7, org.springframework.security.web.authentication.logout.LogoutFilter@1c6a0103, com.example.SpringSecurity.config.Security.filter.JwtAuthenticationTokenFilter@3f048c86, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@545d2560, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@16681017, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@255d9277, org.springframework.security.web.session.SessionManagementFilter@5c448ef, org.springframework.security.web.access.ExceptionTranslationFilter@2aea717c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6238d5e0]
+2021-04-19 09:42:53,066:INFO main (ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-19 09:42:53,428:INFO main (StartupInfoLogger.java:61) - Started SpringSecurityApplicationTests in 2.94 seconds (JVM running for 3.855)
+2021-04-19 09:42:54,666:INFO SpringContextShutdownHook (ExecutorConfigurationSupport.java:218) - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-19 09:42:54,666:INFO SpringContextShutdownHook (DruidDataSource.java:1825) - {dataSource-1} closed
+2021-04-19 09:43:21,234:INFO main (StartupInfoLogger.java:55) - Starting SpringSecurityApplicationTests using Java 1.8.0_271 on DESKTOP-5LGK8HS with PID 11088 (started by Administrator in D:\idea-work\SpringSecurity)
+2021-04-19 09:43:21,249:INFO main (SpringApplication.java:662) - No active profile set, falling back to default profiles: default
+2021-04-19 09:43:21,718:INFO main (RepositoryConfigurationDelegate.java:250) - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-04-19 09:43:21,718:INFO main (RepositoryConfigurationDelegate.java:128) - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-04-19 09:43:21,734:INFO main (RepositoryConfigurationDelegate.java:188) - Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2021-04-19 09:43:21,984:INFO main (PostProcessorRegistrationDelegate.java:376) - Bean 'redisConfig' of type [com.example.SpringSecurity.config.Redis.redisConfig$$EnhancerBySpringCGLIB$$ba646a5a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-19 09:43:22,109:INFO main (PostProcessorRegistrationDelegate.java:376) - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@c386958' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-19 09:43:22,124:INFO main (PostProcessorRegistrationDelegate.java:376) - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-19 09:43:22,631:INFO main (DruidDataSource.java:930) - {dataSource-1} inited
+2021-04-19 09:43:23,142:INFO main (DefaultSecurityFilterChain.java:51) - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@24d8f87a, org.springframework.security.web.context.SecurityContextPersistenceFilter@7741ae1b, org.springframework.security.web.header.HeaderWriterFilter@7d133fb7, org.springframework.security.web.authentication.logout.LogoutFilter@1c6a0103, com.example.SpringSecurity.config.Security.filter.JwtAuthenticationTokenFilter@3f048c86, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@545d2560, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@16681017, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@255d9277, org.springframework.security.web.session.SessionManagementFilter@5c448ef, org.springframework.security.web.access.ExceptionTranslationFilter@2aea717c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6238d5e0]
+2021-04-19 09:43:23,436:INFO main (ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-19 09:43:23,756:INFO main (StartupInfoLogger.java:61) - Started SpringSecurityApplicationTests in 2.876 seconds (JVM running for 3.723)
+2021-04-19 09:43:25,024:INFO SpringContextShutdownHook (ExecutorConfigurationSupport.java:218) - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-19 09:43:25,024:INFO SpringContextShutdownHook (DruidDataSource.java:1825) - {dataSource-1} closed
+2021-04-19 16:20:44,975:INFO main (StartupInfoLogger.java:55) - Starting SpringSecurityApplication using Java 1.8.0_271 on DESKTOP-5LGK8HS with PID 14116 (D:\idea-work\SpringSecurity\target\classes started by Administrator in D:\idea-work\SpringSecurity)
+2021-04-19 16:20:44,980:INFO main (SpringApplication.java:662) - No active profile set, falling back to default profiles: default
+2021-04-19 16:20:45,370:INFO main (RepositoryConfigurationDelegate.java:250) - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-04-19 16:20:45,372:INFO main (RepositoryConfigurationDelegate.java:128) - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-04-19 16:20:45,387:INFO main (RepositoryConfigurationDelegate.java:188) - Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2021-04-19 16:20:45,517:INFO main (PostProcessorRegistrationDelegate.java:376) - Bean 'redisConfig' of type [com.example.SpringSecurity.config.Redis.redisConfig$$EnhancerBySpringCGLIB$$a4172273] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-19 16:20:45,543:INFO main (PostProcessorRegistrationDelegate.java:376) - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@35342d2f' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-19 16:20:45,547:INFO main (PostProcessorRegistrationDelegate.java:376) - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-19 16:20:45,763:INFO main (TomcatWebServer.java:108) - Tomcat initialized with port(s): 9200 (http)
+2021-04-19 16:20:45,768:INFO main (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-9200"]
+2021-04-19 16:20:45,768:INFO main (DirectJDKLog.java:173) - Starting service [Tomcat]
+2021-04-19 16:20:45,768:INFO main (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-19 16:20:45,865:INFO main (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2021-04-19 16:20:45,865:INFO main (ServletWebServerApplicationContext.java:289) - Root WebApplicationContext: initialization completed in 861 ms
+2021-04-19 16:20:46,256:INFO main (DruidDataSource.java:930) - {dataSource-1} inited
+2021-04-19 16:20:46,540:INFO main (DefaultSecurityFilterChain.java:51) - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5eb5da12, org.springframework.security.web.context.SecurityContextPersistenceFilter@47272cd3, org.springframework.security.web.header.HeaderWriterFilter@d7bbf12, org.springframework.security.web.authentication.logout.LogoutFilter@3becc950, com.example.SpringSecurity.config.Security.filter.JwtAuthenticationTokenFilter@4afbb6c2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@32f1fafe, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@66bf40e5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4a50d04a, org.springframework.security.web.session.SessionManagementFilter@180b3819, org.springframework.security.web.access.ExceptionTranslationFilter@5d152bcd, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@574059d5]
+2021-04-19 16:20:46,623:INFO main (ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-19 16:20:46,832:INFO main (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-9200"]
+2021-04-19 16:20:46,843:INFO main (TomcatWebServer.java:220) - Tomcat started on port(s): 9200 (http) with context path ''
+2021-04-19 16:20:46,849:INFO main (StartupInfoLogger.java:61) - Started SpringSecurityApplication in 2.225 seconds (JVM running for 2.697)
+2021-04-19 16:21:03,791:INFO http-nio-9200-exec-1 (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-19 16:21:03,791:INFO http-nio-9200-exec-1 (FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+2021-04-19 16:21:03,792:INFO http-nio-9200-exec-1 (FrameworkServlet.java:547) - Completed initialization in 1 ms
+2021-04-19 16:21:03,819:INFO http-nio-9200-exec-1 (JwtAuthenticationTokenFilter.java:55) - 【OncePerRequestFilter】：null
+2021-04-19 16:21:04,040:DEBUG http-nio-9200-exec-1 (BaseJdbcLogger.java:143) - ==>  Preparing: SELECT user_id,user_name,pass_word FROM userInfo WHERE user_name = ? 
+2021-04-19 16:21:04,060:DEBUG http-nio-9200-exec-1 (BaseJdbcLogger.java:143) - ==> Parameters: xhg(String)
+2021-04-19 16:21:04,091:DEBUG http-nio-9200-exec-1 (BaseJdbcLogger.java:143) - <==      Total: 1
+2021-04-19 16:21:04,092:INFO http-nio-9200-exec-1 (UserDetailsServiceImpl.java:45) - 【UserDetailsServiceImpl】:UserInfo{userId=2, userName='xhg', passWord='$2a$10$qx6EUoN3fTJ.4qn.ixhtv.t5RpNEIF4QeopWZKraznqCwnt2d1Ji.', loginTime=null, expireTime=null, token='null'}
+2021-04-19 16:21:21,776:INFO main (StartupInfoLogger.java:55) - Starting SpringSecurityApplication using Java 1.8.0_271 on DESKTOP-5LGK8HS with PID 8440 (D:\idea-work\SpringSecurity\target\classes started by Administrator in D:\idea-work\SpringSecurity)
+2021-04-19 16:21:21,783:INFO main (SpringApplication.java:662) - No active profile set, falling back to default profiles: default
+2021-04-19 16:21:22,222:INFO main (RepositoryConfigurationDelegate.java:250) - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-04-19 16:21:22,224:INFO main (RepositoryConfigurationDelegate.java:128) - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-04-19 16:21:22,242:INFO main (RepositoryConfigurationDelegate.java:188) - Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2021-04-19 16:21:22,404:INFO main (PostProcessorRegistrationDelegate.java:376) - Bean 'redisConfig' of type [com.example.SpringSecurity.config.Redis.redisConfig$$EnhancerBySpringCGLIB$$a1ce8257] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-19 16:21:22,437:INFO main (PostProcessorRegistrationDelegate.java:376) - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@a146b11' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-19 16:21:22,442:INFO main (PostProcessorRegistrationDelegate.java:376) - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-19 16:21:22,603:INFO main (TomcatWebServer.java:108) - Tomcat initialized with port(s): 9200 (http)
+2021-04-19 16:21:22,609:INFO main (DirectJDKLog.java:173) - Initializing ProtocolHandler ["http-nio-9200"]
+2021-04-19 16:21:22,609:INFO main (DirectJDKLog.java:173) - Starting service [Tomcat]
+2021-04-19 16:21:22,610:INFO main (DirectJDKLog.java:173) - Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-19 16:21:22,679:INFO main (DirectJDKLog.java:173) - Initializing Spring embedded WebApplicationContext
+2021-04-19 16:21:22,679:INFO main (ServletWebServerApplicationContext.java:289) - Root WebApplicationContext: initialization completed in 847 ms
+2021-04-19 16:21:23,171:INFO main (DruidDataSource.java:930) - {dataSource-1} inited
+2021-04-19 16:21:23,501:INFO main (DefaultSecurityFilterChain.java:51) - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2d07aacc, org.springframework.security.web.context.SecurityContextPersistenceFilter@3c6bd624, org.springframework.security.web.header.HeaderWriterFilter@6115846e, org.springframework.security.web.authentication.logout.LogoutFilter@1dca62c2, com.example.SpringSecurity.config.Security.filter.JwtAuthenticationTokenFilter@414b2df5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@645ba24a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@41be8db9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@ff5d4f1, org.springframework.security.web.session.SessionManagementFilter@298e002d, org.springframework.security.web.access.ExceptionTranslationFilter@15e5246, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4cd7e993]
+2021-04-19 16:21:23,596:INFO main (ExecutorConfigurationSupport.java:181) - Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-19 16:21:23,814:INFO main (DirectJDKLog.java:173) - Starting ProtocolHandler ["http-nio-9200"]
+2021-04-19 16:21:23,826:INFO main (TomcatWebServer.java:220) - Tomcat started on port(s): 9200 (http) with context path ''
+2021-04-19 16:21:23,833:INFO main (StartupInfoLogger.java:61) - Started SpringSecurityApplication in 2.4 seconds (JVM running for 3.52)
+2021-04-19 16:21:27,859:INFO http-nio-9200-exec-1 (DirectJDKLog.java:173) - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-19 16:21:27,859:INFO http-nio-9200-exec-1 (FrameworkServlet.java:525) - Initializing Servlet 'dispatcherServlet'
+2021-04-19 16:21:27,860:INFO http-nio-9200-exec-1 (FrameworkServlet.java:547) - Completed initialization in 1 ms
+2021-04-19 16:21:34,098:INFO http-nio-9200-exec-1 (JwtAuthenticationTokenFilter.java:55) - 【OncePerRequestFilter】：null
+2021-04-19 16:21:34,278:DEBUG http-nio-9200-exec-1 (BaseJdbcLogger.java:143) - ==>  Preparing: SELECT user_id,user_name,pass_word FROM userInfo WHERE user_name = ? 
+2021-04-19 16:21:34,295:DEBUG http-nio-9200-exec-1 (BaseJdbcLogger.java:143) - ==> Parameters: xhg(String)
+2021-04-19 16:21:34,310:DEBUG http-nio-9200-exec-1 (BaseJdbcLogger.java:143) - <==      Total: 1
+2021-04-19 16:21:34,311:INFO http-nio-9200-exec-1 (UserDetailsServiceImpl.java:45) - 【UserDetailsServiceImpl】:UserInfo{userId=2, userName='xhg', passWord='$2a$10$qx6EUoN3fTJ.4qn.ixhtv.t5RpNEIF4QeopWZKraznqCwnt2d1Ji.', loginTime=null, expireTime=null, token='null'}
+2021-04-19 16:21:34,898:INFO SpringContextShutdownHook (ExecutorConfigurationSupport.java:218) - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-19 16:21:34,902:INFO SpringContextShutdownHook (DruidDataSource.java:1825) - {dataSource-1} closed
